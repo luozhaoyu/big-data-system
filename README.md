@@ -8,7 +8,11 @@ Big Data System
     * config `/home/ubuntu/*`, replace the MASTER_IP with `group-2-vm1`
 - `sudo apt-get update --fix-missing`
 - `sudo apt-get install openjdk-7-jdk pdsh`
-- download and untar hadoop
+- `sudo apt-get install git`
+    * `git clone https://github.com/luozhaoyu/big-data-system.git`
+- `./mkdirs_configs.sh`
+    * it would download hadoop
+- untar hadoop
 - `source run.sh`
 - `hadoop namenode -format`
 - `start_all`

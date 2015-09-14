@@ -28,4 +28,20 @@ Big Data System
 1. `./tez.sh`
 - test
     1. `hadoop dfs -copyFromLocal ~/wcount_input.txt /`
-    - `hadoop jar /home/ubuntu/software/tez/tez-examples-0.7.1-SNAPSHOT.jar orderedwordcount -Dtez.runtime.io.sort.mb=220 /wcount_input.txt /wcount_output.txt`
+    - `hadoop jar /home/ubuntu/software/tez-0.7.1-SNAPSHOT-minimal/tez-examples-0.7.1-SNAPSHOT.jar orderedwordcount -Dtez.runtime.io.sort.mb=220 /wcount_input.txt /wcount_output.txt`
+
+### Attention
+There maybe collection4 class not found error, please do
+
+1. `sudo apt-get install libcommons-collections4-java`
+- add hadoop class path `/usr/share/java/commons-collections4.jar` into `run.sh`
+- `source ./run.sh`
+- run again
+
+## Hive
+1. Start hive console
+    Because run.sh already sets $HIVE_HOME=/home/ubuntu/software/hive-1.2.1 and
+    exports $HIVE_HOME/bin to $PATH, directly start hive console by typing
+    `hive`
+2. Here we set a mysql-user 'hive' and bind it to the master-ip 10.0.1.27 
+

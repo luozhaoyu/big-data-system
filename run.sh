@@ -44,7 +44,7 @@ case "$1" in
     ;;
 esac
 
-export HADOOP_CLASSPATH=$HADOOP_HOME:$HADOOP_CONF_DIR:$HIVE_HOME:$TEZ_JARS/*:$TEZ_JARS/lib/*:
+export HADOOP_CLASSPATH=/usr/share/java/commons-collections4.jar:$HADOOP_HOME:$HADOOP_CONF_DIR:$HIVE_HOME:$TEZ_JARS/*:$TEZ_JARS/lib/*:
 export HADOOP_HEAPSIZE=10240
 
 export PATH=/home/ubuntu/software/hadoop-${COMMON_VERSION}/bin:/home/ubuntu/software/hadoop-${COMMON_VERSION}/sbin:$HIVE_HOME/bin:$PATH

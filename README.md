@@ -40,8 +40,12 @@ There maybe collection4 class not found error, please do
 
 ## Hive
 1. Start hive console
-    Because run.sh already sets $HIVE_HOME=/home/ubuntu/software/hive-1.2.1 and
+    - Because run.sh already sets $HIVE_HOME=/home/ubuntu/software/hive-1.2.1 and
     exports $HIVE_HOME/bin to $PATH, directly start hive console by typing
     `hive`
-2. Here we set a mysql-user 'hive' and bind it to the master-ip 10.0.1.27 
+2. Here we set a mysql-user 'hive' and bind it to the master-ip 10.0.1.27 (group-2-vm1)
+
+3. `./hive_workload.sh`
+    - The script is placed under the repository (/home/ubuntu/big-data-system)
+    - The script will run all the workload (creating a 10Gb database; running a MapReduce job on Hive for the database; and then running a Tez job on Hive for the database). It shows the elasped-time of the MR job and the Tez job.
 

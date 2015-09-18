@@ -1,4 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+. ./run.sh
+stop_all
+start_all
+
 ssh ubuntu@group-2-vm1 "killall dstat"
 ssh ubuntu@group-2-vm1 "rm -f ~/dstat.csv"
 ssh ubuntu@group-2-vm2 "killall dstat"

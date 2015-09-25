@@ -1,0 +1,351 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_f3396350-5e69-4e4a-a43d-837ee26b963b_2049946767.txt
+OK
+Time taken: 1.265 seconds
+Query ID = ubuntu_20150918214656_f850e555-476e-4544-b65e-e58cd1ea2859
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1442610625028_0033)
+
+Map 1: -/-	Map 5: -/-	Map 6: -/-	Map 7: -/-	Map 8: -/-	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0/39	Map 5: 0/50	Map 6: 0/1	Map 7: 0/1	Map 8: 0/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0/39	Map 5: 0/50	Map 6: 0/1	Map 7: 0/1	Map 8: 0/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0/39	Map 5: 0/50	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 8: 0(+1)/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+1)/39	Map 5: 0/50	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 8: 0(+1)/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+4)/39	Map 5: 0(+1)/50	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 8: 0(+1)/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+12)/39	Map 5: 0(+1)/50	Map 6: 0(+1)/1	Map 7: 0(+1)/1	Map 8: 0(+1)/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+12)/39	Map 5: 0(+1)/50	Map 6: 1/1	Map 7: 0(+1)/1	Map 8: 0(+1)/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+12)/39	Map 5: 0(+1)/50	Map 6: 1/1	Map 7: 0(+1)/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+12)/39	Map 5: 0(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+13)/39	Map 5: 0(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/39	Map 5: 0(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+15)/39	Map 5: 0(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+15)/39	Map 5: 0(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 1(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 2(+14)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 3(+13)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 3(+14)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 3(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 4(+14)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 5(+13)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 6(+13)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 7(+12)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 8(+11)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 9(+10)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 10(+9)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 11(+8)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 11(+9)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 13(+7)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 13(+8)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 13(+9)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 13(+10)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 13(+11)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+11)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+12)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+13)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+14)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 15(+13)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 15(+14)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 15(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 15(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+16)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 17(+15)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+14)/39	Map 5: 1(+0)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+14)/39	Map 5: 1(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 19(+13)/39	Map 5: 1(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 19(+14)/39	Map 5: 1(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+13)/39	Map 5: 1(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+13)/39	Map 5: 1(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+14)/39	Map 5: 1(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 21(+13)/39	Map 5: 1(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 21(+13)/39	Map 5: 2(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 22(+12)/39	Map 5: 2(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 22(+12)/39	Map 5: 2(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 23(+11)/39	Map 5: 2(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 24(+10)/39	Map 5: 2(+3)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 25(+9)/39	Map 5: 2(+3)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 25(+9)/39	Map 5: 3(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 26(+8)/39	Map 5: 3(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 27(+7)/39	Map 5: 3(+4)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 28(+6)/39	Map 5: 3(+4)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+5)/39	Map 5: 3(+4)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+5)/39	Map 5: 3(+6)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+5)/39	Map 5: 3(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+3)/39	Map 5: 3(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+3)/39	Map 5: 3(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 4(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 4(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 5(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 5(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 6(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 7(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 7(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 8(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 8(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 9(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 11(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 12(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 12(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 13(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 13(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 14(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 15(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+2)/39	Map 5: 16(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 33(+1)/39	Map 5: 16(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 33(+1)/39	Map 5: 16(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 16(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 17(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 17(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 18(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 18(+12)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 18(+13)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 19(+12)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 20(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 20(+12)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 20(+13)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 21(+13)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 22(+12)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 23(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 25(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 25(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 26(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 26(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 27(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 28(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 29(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+0)/39	Map 5: 30(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+1)/39	Map 5: 31(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 32(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 32(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 32(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 32(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 32(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 33(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 34(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 34(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 34(+12)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 35(+11)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 36(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+2)/39	Map 5: 37(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+3)/39	Map 5: 37(+10)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+3)/39	Map 5: 38(+9)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+3)/39	Map 5: 39(+8)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+3)/39	Map 5: 40(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+3)/39	Map 5: 41(+6)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+4)/39	Map 5: 41(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+4)/39	Map 5: 42(+6)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+4)/39	Map 5: 42(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+4)/39	Map 5: 43(+6)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 43(+6)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 43(+7)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 44(+6)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 45(+5)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 46(+4)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 47(+3)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 48(+2)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 49(+1)/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+5)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+4)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 35(+4)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 36(+3)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 36(+3)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 37(+2)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 37(+1)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 38(+1)/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+1)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 0(+3)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 1(+2)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 2(+1)/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 3/3	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 3/3	Reducer 3: 0(+1)/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 3/3	Reducer 3: 1/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 3/3	Reducer 3: 1/1	Reducer 4: 0(+1)/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 3/3	Reducer 3: 1/1	Reducer 4: 0/1	
+Map 1: 39/39	Map 5: 50/50	Map 6: 1/1	Map 7: 1/1	Map 8: 1/1	Reducer 2: 3/3	Reducer 3: 1/1	Reducer 4: 1/1	
+OK
+able	1	128	15th 	RD	Suite T	Oak Grove	Walker County	AL	38370	497	359	228	253	436
+able	1	228	Cherry 	Avenue	Suite G	Oak Grove	Walker County	AL	38370	446	359	251	216	436
+able	1	255	Sycamore 	Dr.	Suite 410	Riverside	Ziebach County	SD	59231	434	343	202	205	409
+able	1	300	Forest 	Lane	Suite 230	Fairview	Walker County	AL	35709	447	355	209	200	452
+able	1	302	Walnut Madison	Wy	Suite T	Oak Grove	Ziebach County	SD	58370	495	358	219	228	442
+able	1	441	11th 	ST	Suite H	Pleasant Hill	Williamson County	TN	33604	482	351	221	219	424
+able	1	479	Park First	Lane	Suite 20	Riverside	Walker County	AL	39231	435	348	204	206	420
+able	1	543	West Elm	Ln	Suite A	Oak Grove	Walker County	AL	38370	425	339	219	204	432
+able	1	557	Elevnth 7th	Pkwy	Suite L	Oak Grove	Walker County	AL	38370	476	375	225	237	450
+able	1	722	Railroad Spring	Ct.	Suite M	Pleasant Hill	Ziebach County	SD	53604	451	334	216	204	441
+anti	1	192	5th Highland	Blvd	Suite N	Riverside	Williamson County	TN	39231	460	338	208	198	456
+anti	1	321	11th 	Parkway	Suite G	Five Points	Walker County	AL	36098	459	372	239	211	449
+anti	1	735	Walnut 	Blvd	Suite 360	Midway	Walker County	AL	31904	466	361	215	206	440
+anti	1	897	Ash Oak	Circle	Suite T	Mount Pleasant	Williamson County	TN	31933	477	348	230	213	395
+ation	1	19	Fourth 	Boulevard	Suite N	Mount Pleasant	Walker County	AL	31933	489	365	220	190	450
+ation	1	213	8th 	Road	Suite 490	Oak Grove	Williamson County	TN	38370	433	371	202	239	453
+ation	1	421	12th Center	Avenue	Suite J	Oak Grove	Williamson County	TN	38370	461	353	245	189	456
+ation	1	8	Cedar Maple	ST	Suite 320	Mount Pleasant	Williamson County	TN	31933	419	379	203	226	468
+ation	1	811	Lee 	Circle	Suite T	Midway	Ziebach County	SD	51904	487	344	220	210	455
+bar	1	147	Highland 	Ln	Suite 270	Midway	Ziebach County	SD	51904	479	370	233	226	483
+bar	1	174	Sycamore 	Ln	Suite O	Riverside	Walker County	AL	39231	456	414	219	235	446
+bar	1	175	4th 	Court	Suite C	Riverside	Williamson County	TN	39231	462	344	215	243	471
+bar	1	200	Lake 	RD	Suite 320	Pleasant Hill	Ziebach County	SD	53604	444	357	216	215	408
+bar	1	365	Railroad Smith	Boulevard	Suite O	Riverside	Williamson County	TN	39231	466	351	206	233	440
+bar	1	543	Twelfth 	Avenue	Suite L	Midway	Ziebach County	SD	51904	407	346	230	202	462
+bar	1	582	Oak Washington	Drive	Suite S	Oak Grove	Walker County	AL	38370	470	375	214	209	412
+bar	1	818	1st Elm	Road	Suite 220	Fairview	Walker County	AL	35709	474	338	235	223	451
+bar	1	829	Jefferson 	Lane	Suite 110	Mount Pleasant	Williamson County	TN	31933	380	358	208	228	438
+bar	1	903	Sixth 	Court	Suite Q	Mount Pleasant	Ziebach County	SD	51933	464	368	204	223	461
+cally	NULL	688		Avenue	Suite 50			TN		432	332	197	216	435
+cally	1	353	Third View	Drive	Suite 380	Oak Grove	Williamson County	TN	38370	473	351	219	197	411
+cally	1	392	15th 	Dr.	Suite W	Midway	Walker County	AL	31904	472	382	198	225	418
+cally	1	409	4th 15th	Drive	Suite Q	Mount Pleasant	Walker County	AL	31933	448	388	210	238	467
+cally	1	496	3rd 	Ct.	Suite E	Mount Pleasant	Williamson County	TN	31933	466	371	206	226	433
+cally	1	588	View Mill	Court	Suite 160	Mount Pleasant	Ziebach County	SD	51933	480	370	220	218	425
+cally	1	606	Lake Lincoln	Boulevard	Suite S	Riverside	Williamson County	TN	39231	439	359	216	215	432
+cally	1	70	7th 	RD	Suite 160	Five Points	Williamson County	TN	36098	444	318	202	228	458
+cally	1	956	View Sunset	Parkway	Suite 250	Riverside	Williamson County	TN	39231	450	340	236	234	443
+eing	1	226	12th 	Lane	Suite D	Five Points	Walker County	AL	36098	432	392	215	246	417
+eing	1	293	Center Main	Lane	Suite 200	Fairview	Ziebach County	SD	55709	453	364	196	213	416
+eing	1	303	Fifteenth 	RD	Suite 340	Pleasant Hill	Williamson County	TN	33604	482	365	206	232	465
+eing	1	317	Poplar 9th	Pkwy	Suite P	Oak Grove	Walker County	AL	38370	421	396	242	216	452
+eing	1	317	Ridge Green	Lane	Suite A	Five Points	Williamson County	TN	36098	446	350	237	223	449
+eing	1	408	Spring Locust	Wy	Suite 340	Five Points	Ziebach County	SD	56098	450	375	209	228	437
+eing	1	618	Jefferson Lee	Pkwy	Suite W	Oak Grove	Ziebach County	SD	58370	465	360	208	227	470
+eing	1	656	Washington 	Dr.	Suite 50	Oak Grove	Williamson County	TN	38370	427	358	209	243	459
+eing	1	687	Ridge 	Blvd	Suite P	Pleasant Hill	Ziebach County	SD	53604	456	368	208	217	421
+ese	1	27	Lake 	Ln	Suite 260	Pleasant Hill	Williamson County	TN	33604	443	364	218	194	428
+ese	1	302	Spruce 	Court	Suite L	Fairview	Walker County	AL	35709	451	354	214	230	397
+ese	1	313	East 	Court	Suite 300	Five Points	Walker County	AL	36098	444	348	212	229	433
+ese	1	408	Washington 1st	Circle	Suite 390	Riverside	Ziebach County	SD	59231	457	343	225	229	448
+ese	1	462	1st Washington	Parkway	Suite 290	Oak Grove	Walker County	AL	38370	472	376	230	210	423
+ese	1	487	7th 	Street	Suite 0	Five Points	Williamson County	TN	36098	460	363	230	227	442
+ese	1	521	9th 	Ave	Suite Y	Fairview	Ziebach County	SD	55709	455	377	228	215	438
+ese	1	669	Locust Spring	Parkway	Suite E	Five Points	Walker County	AL	36098	430	355	227	258	452
+ese	1	924	West 	Drive	Suite 130	Fairview	Walker County	AL	35709	432	357	213	217	426
+ese	1	984	Oak 	Cir.	Suite D	Midway	Williamson County	TN	31904	486	362	224	230	436
+n st	1	240	Willow 	RD	Suite 280	Pleasant Hill	Walker County	AL	33604	433	371	249	209	420
+n st	1	49	Locust Lake	Way	Suite 90	Midway	Walker County	AL	31904	420	342	215	219	433
+n st	1	495	Valley 	Lane	Suite D	Midway	Williamson County	TN	31904	437	378	231	222	401
+n st	1	616	Cedar 	Street	Suite M	Pleasant Hill	Ziebach County	SD	53604	481	362	220	242	486
+n st	1	638	Cherry 	Dr.	Suite T	Mount Pleasant	Walker County	AL	31933	466	339	215	229	443
+ought	1	150	Maple Williams	Lane	Suite D	Fairview	Williamson County	TN	35709	458	391	195	220	446
+ought	1	602	Chestnut 5th	Boulevard	Suite C	Midway	Williamson County	TN	31904	477	364	202	260	443
+ought	1	75	2nd Oak	Pkwy	Suite C	Midway	Williamson County	TN	31904	418	335	179	200	476
+ought	1	767	Spring 	Wy	Suite 250	Midway	Ziebach County	SD	51904	436	348	232	212	467
+ought	1	934	Hill 	Circle	Suite 490	Fairview	Ziebach County	SD	55709	451	353	244	191	434
+pri	1	392	Jefferson 	Ln	Suite K	Five Points	Williamson County	TN	36098	441	353	210	235	443
+pri	1	728	Adams 	Way	Suite T	Oak Grove	Walker County	AL	38370	465	367	219	249	465
+pri	1	84	First 	Cir.	Suite 180	Midway	Ziebach County	SD	51904	439	356	247	223	501
+pri	1	872	Washington 	Pkwy	Suite 70	Riverside	Walker County	AL	39231	458	373	209	239	436
+pri	1	889	River Wilson	Avenue	Suite 210	Fairview	Walker County	AL	35709	440	357	209	246	439
+Time taken: 433.022 seconds, Fetched: 72 row(s)
+27.97user 2.95system 7:41.56elapsed 6%CPU (0avgtext+0avgdata 651604maxresident)k
+162768inputs+1824outputs (140major+94252minor)pagefaults 0swaps

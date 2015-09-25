@@ -1,0 +1,195 @@
+
+Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_f26893f0-c007-4ecc-80af-99b4ed6bbdda_540105566.txt
+OK
+Time taken: 1.258 seconds
+Query ID = ubuntu_20150918214321_e9e06540-361b-45f3-bea0-66b8ba947509
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (Executing on YARN cluster with App id application_1442610625028_0031)
+
+Map 1: -/-	Map 5: -/-	Map 6: -/-	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: -/-	Map 5: 0/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0/50	Map 5: 0/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+4)/50	Map 5: 0/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+5)/50	Map 5: 0(+1)/1	Map 6: 0/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+6)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+10)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 0(+1)/1	Map 6: 0(+1)/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 0(+1)/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 0(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 1(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 2(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 2(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 3(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 3(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 5(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 8(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 10(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 11(+7)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 13(+5)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+4)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+5)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 14(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 15(+7)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 15(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 16(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 17(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 18(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 19(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 20(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 21(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 23(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 24(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 28(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 29(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 30(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 30(+7)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 31(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+5)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+9)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 32(+16)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 33(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 34(+15)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 35(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 36(+14)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 37(+13)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 38(+12)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 39(+11)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 40(+10)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 42(+8)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 44(+6)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 45(+5)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 46(+4)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 48(+2)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 49(+1)/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 0(+1)/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 0(+1)/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 0/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 0(+1)/1	
+Map 1: 50/50	Map 5: 1/1	Map 6: 1/1	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 1/1	
+OK
+	Books		NULL	AAAAAAAACFDMAAAA	16243.100158691406	4.615847926206641
+	Books		82.97	AAAAAAAAGFLDAAAA	20883.809715270996	5.934611547288133
+Approximately impossible men increase also special entries. Years would not insist political years. Relationships increase just large, small schools	Books		NULL	AAAAAAAAGJLFAAAA	12040.850147247314	3.4216825999313443
+Hands complete very by a schools. Growing, public animals would support british exhibitions. Armed areas select brilliant streets. Broad, basic hours	Books		NULL	AAAAAAAAHLGEAAAA	34148.43036842346	9.704056489176878
+Therefore modern visitors may gain	Books		9.92	AAAAAAAAMNJHAAAA	38446.66018676758	10.925496669901689
+Of course common authorities would not preserve just to a ris	Books		4.17	AAAAAAAANFJNAAAA	31516.060569763184	8.956008483719406
+Perhaps old ships will give more. Main poets describe less than. Right, brief words work long ago maj	Books	arts	1.05	AAAAAAAAAAHMAAAA	19249.41015625	0.3528244360347533
+Conditions shall occur once again after a products; agricultural, public walls give now a little public sides. Still alternative seats	Books	arts	6.5	AAAAAAAAAANEAAAA	15322.800155639648	0.2808531939162539
+No longer soft cameras mean select, small policies. Also famous arms could want irish, different connections. Attacks should remove black r	Books	arts	1.52	AAAAAAAAABEDAAAA	21082.43018722534	0.38642205037304483
+Far particular products turn specif	Books	arts	3.41	AAAAAAAAABOFAAAA	32606.880241394043	0.5976548911701198
+Light tears overcome real, vulnerable clothes. Serious, recent dates s	Books	arts	1.88	AAAAAAAAACBLAAAA	12789.190002441406	0.23441439053588892
+Here elderly units ignore; eyes may reach others. Products include again. Extra, expected ministers look for example. Friendly ears give in a products. Results g	Books	arts	9.1	AAAAAAAAACJIAAAA	22526.09031677246	0.41288304667884285
+Results mix both; nearby, contrary workers store. Members suspend previously. Then permanent efforts date only familiar pie	Books	arts	1.93	AAAAAAAAACNLAAAA	63727.42002868652	1.168066493937257
+National, upper principles fill relatives. Components make. Rarely unusual plants might not deal	Books	arts	7.27	AAAAAAAAAFOAAAAA	4686.3599853515625	0.08589677841898156
+Main, spatial results must draw here probable dishes. Terrible, average churches c	Books	arts	9.67	AAAAAAAAAFPJAAAA	17158.239807128906	0.31449515773000014
+Badly difficult intervals should not get today new followers. Standards examine. Young, actual departments might knock special, national assumptions. Successful wi	Books	arts	0.29	AAAAAAAAAGABAAAA	25266.96949005127	0.4631209054340894
+Enemies could shake political, weak bedrooms. Here sensible stones fall running, environmental tonnes; sensi	Books	arts	3.02	AAAAAAAAAGKHAAAA	21573.000061035156	0.3954137564906679
+Main events pose characters; close quiet lines write never bright, productive shares. C	Books	arts	3.53	AAAAAAAAAIEHAAAA	49761.37071228027	0.9120813269271042
+Substantial, past qualifications would attack. Independent, fine passen	Books	arts	0.47	AAAAAAAAAIKOAAAA	27219.789951324463	0.49891435428956676
+Later full days shall not rise; general, availab	Books	arts	1.72	AAAAAAAAAJCOAAAA	21580.05014038086	0.39554297812649764
+Regulations go almost. Complex operations may stay at present countries. Widely special modules can rest also in ne	Books	arts	76.12	AAAAAAAAAKLCAAAA	34868.100288152695	0.6391010280268932
+Low real movements play heavily sorts. More light stations tell real, new eggs. Distinguished, ter	Books	arts	7.88	AAAAAAAAALBNAAAA	20433.779891967773	0.37453287180859307
+Armed, everyday guidelines get sooner international planes. Dry thousands would not identify universally useful, above sectors. Very open odds used to get much under a arms. Good beds stay 	Books	arts	3.83	AAAAAAAAALINAAAA	24059.00018310547	0.4409799106705661
+Desirable friends would reflect however other hands. Involved personnel find again. Good items care firmly physical democrats; entries recognize well just social services.	Books	arts	5.54	AAAAAAAAAOIKAAAA	15318.71002960205	0.2807782255717274
+New, expected possibilities will not determine with a areas. Great friends fall probably other elections; internal, professional conservatives respond. Early planes establish in 	Books	arts	7.03	AAAAAAAAAPEDAAAA	20358.270065307617	0.37314884436098833
+Homes paint response	Books	arts	4.6	AAAAAAAAAPFLAAAA	29111.829833984375	0.5335937496131683
+Periods shall 	Books	arts	2.27	AAAAAAAAAPGEAAAA	24997.37010192871	0.45817939027609006
+Badly outside representatives should tax original decisions. Signs trust well front, literary laws. Social sizes can involve for example to a effects. Lists might appear small purposes. Conv	Books	arts	1.48	AAAAAAAAAPODAAAA	38224.109996795654	0.7006136781895608
+Little days answer in a emotions; players touch.	Books	arts	2.58	AAAAAAAABFHDAAAA	13408.480224609375	0.24576542527433812
+As model thousands respond rather. Pounds ought to dedu	Books	arts	1.63	AAAAAAAABFNMAAAA	33176.61945724487	0.6080977003724675
+Minor heads close common children; recently strong firms provide. Useful, young men ought to create changes. Popular, common regulations might decide. Points fit. Obvious, glad officials 	Books	arts	3.88	AAAAAAAABHDCAAAA	14138.0400390625	0.25913760281113746
+Video-taped, easy buildings replace actually free, formal stars. Large others could not help. Things deal gently goods. Additional, mediterranean minutes describe no	Books	arts	9.36	AAAAAAAABIDKAAAA	21206.910263061523	0.3887036585988535
+Very red months used to help until a drugs. As well remaining transactions choose plea	Books	arts	1.99	AAAAAAAABIHMAAAA	31948.589431762695	0.5855890106174303
+French books undergo so technical figures; beings test then friends. Top, constant proceedings will not face too. Weakly public cuts change organic, resp	Books	arts	2.01	AAAAAAAABKDIAAAA	12060.030029296875	0.22104954173192154
+Yet electronic keys could not serve followers. Very relevant advertisements include neither before new reforms. Local, quiet arms would know other, other candidat	Books	arts	7.4	AAAAAAAABMIKAAAA	34730.67035675049	0.6365820605547633
+Key girls cannot come cars. Rumours would imagine	Books	arts	8.87	AAAAAAAABMLNAAAA	35630.07013082504	0.6530672523337232
+Local, religious hours turn always other prices. Tonight subject stars bring firmly members; high, full-time officials find over positions. Benefits may not relax far so various bonds. Direct feat	Books	arts	9.66	AAAAAAAABOFFAAAA	18125.410186767578	0.3322225239700891
+Too certain firms could watch just relative examples. Again likely services beat on a lessons. Sure, small laws could spend as quite only countries. Clear hills may not interpret open netw	Books	arts	5.69	AAAAAAAABPNFAAAA	34779.44006347656	0.6374759655695942
+Aggressive, public eyes recycle short, additional horses. Alone, big problems climb restrictions; ends suffice highly at the schools. Able, quiet ti	Books	arts	8.0	AAAAAAAACBEMAAAA	22315.419925689697	0.4090216472219424
+Public, radical centuries ought to understand right. Bits take figures; parents read just very 	Books	arts	1.62	AAAAAAAACBOMAAAA	10871.169771194458	0.19925879870736585
+Victorian miles would reform as well relationships. However tired institutions will send. Dramatically likely rats catch in a teams. Years may spend nearly mass, high	Books	arts	2.32	AAAAAAAACCAAAAAA	20799.470277786255	0.3812356488335735
+Great wives afford currently in a stars. Basic politicians would counteract explicitly. Good, vital differences call in a ministers. Figures depend to the boats. Real, enormous employees judge sure ne	Books	arts	2.24	AAAAAAAACCGHAAAA	66453.68015289307	1.2180363986252143
+So	Books	arts	11.27	AAAAAAAACDJIAAAA	30766.80979156494	0.5639280489731201
+Drugs require comfortable, estimated terms. Conflicts may not let then old courses. Physical, dead females appreciate anyway labour, nation	Books	arts	7.45	AAAAAAAACGGFAAAA	45321.43078613281	0.8307012073413341
+Taxes should emerge maximum studies. Literary forms dig pos	Books	arts	2.18	AAAAAAAACGLDAAAA	10603.579879760742	0.1943541158226777
+Free feet experience too powerful coins. Mild details 	Books	arts	1.16	AAAAAAAACHFDAAAA	34733.460220336914	0.6366331962539097
+Tory, other walls carry however here royal addresses. Unexpected women can 	Books	arts	1.63	AAAAAAAACJJMAAAA	25788.09970855713	0.4726727552805273
+Particularly human attempts used to clear real, united styles. As well disciplinary minu	Books	arts	7.1	AAAAAAAACJLEAAAA	29487.85023498535	0.5404858665582507
+Too broken villages sign forward. General, dead arms shall not include always therefore metropolitan photographs; literary orders order local courses. Clubs win distinct, honest kids. Su	Books	arts	0.64	AAAAAAAACJOKAAAA	49082.01013183594	0.8996292563590255
+Eyes will become for a attitudes. Substantial, go	Books	arts	7.42	AAAAAAAACKFIAAAA	26695.93950653076	0.4893126451332537
+Par	Books	arts	12.27	AAAAAAAACKKEAAAA	22489.260009765625	0.4122079801602745
+Long, stupid priorities make well. Needs live british workers. Red events should suffer usually therefore 	Books	arts	1.09	AAAAAAAACMPMAAAA	48358.51918411255	0.8863683157102091
+Values shall not bear at least hands. A bit early years ask nearby papers. Then northern areas cannot cover. Nice, powerful priests last slowly for a standards. Spatial, amazing regulati	Books	arts	93.59	AAAAAAAACNEJAAAA	39103.78023505211	0.716737245259413
+Parliamentary relationships require almost slim papers. Important, particular scores would give anywhere across the details. Other railways can imagine much wit	Books	arts	0.56	AAAAAAAADAAKAAAA	22808.550262451172	0.418060284330675
+Glad users understand very almost original jobs. Towns can understand. Supreme, following days work by a parents; german, crucial weapons work sure; fair pictur	Books	arts	7.18	AAAAAAAADCCDAAAA	31154.61981201172	0.5710362590762922
+Patterns may try english, criminal difficulties. Cups must progress then prisoners. Again new goals will collect heavily local, other offices. Hours avoid most with a films. Premises can get. Eyes	Books	arts	1.69	AAAAAAAADFJLAAAA	6772.799896240234	0.12413935203055171
+Green proposals let successfully legal, central horses; bands form classes. Chief, difficult children used to find of course open lines. Present men can see. Inc, separate losses ask too often	Books	arts	2.41	AAAAAAAADFLJAAAA	61039.40981578827	1.1187976758424045
+Underlying pools can see thereby for the institutions. Unexpected structures train else weeks. Important, available privileges serve until the things. Even major issues should sit married, dangerous	Books	arts	5.91	AAAAAAAADGKMAAAA	28273.419631958008	0.5182264420284374
+Significant, preliminary boys can remain lightly more pale discussion	Books	arts	2.74	AAAAAAAADJFCAAAA	21576.88007736206	0.39548487371250657
+Personnel end to a years. Customers expect originally bizarre, wonderful things. Supporters continue more for a judges. 	Books	arts	8.57	AAAAAAAADNHOAAAA	22762.01039123535	0.41720725020227495
+Again personal victims might resist thus so popular cells. Doctors ought to curtail throughout a owners; informal responsibilities s	Books	arts	1.92	AAAAAAAADNPMAAAA	39451.58953857422	0.7231122780716773
+Especially true items might supply particularly. Black, automatic words might develop post-war problems. Fresh, visible workers could not appe	Books	arts	4.23	AAAAAAAADPCCAAAA	20663.110515594482	0.3787362966039404
+Possible, entire patients live far with a view to a papers. Forward very groups require well other profits. Skilled, sorry pressures shall analyse in a dollars. Pa	Books	arts	73.73	AAAAAAAAEABPAAAA	10889.510116577148	0.19959496080084324
+Concentrations can tell better modern, local names. About commercial accounts will not buy inherently users. Ever worried stores ought to go nice, legislative difficulties. Reasons 	Books	arts	7.79	AAAAAAAAEACHAAAA	43601.51044464111	0.799176608946589
+Brothers get never lines. Difficult, international houses understand sounds. Other, dependent meetings suppress about alone, special materials; new, bad	Books	arts	1.68	AAAAAAAAEADMAAAA	21246.01043319702	0.3894203296742236
+Communications grab as. Never new minutes release unfair occ	Books	arts	1.09	AAAAAAAAEAEAAAAA	28512.27032470703	0.5226043611585113
+Afraid youngsters see once more usual, logical rocks. Blind, unable consultants say. Different, private women work earlier payable twins. Afraid conclusions used to ensu	Books	arts	4.62	AAAAAAAAEANLAAAA	23735.280379652977	0.4350464168045568
+Successful, principal weeks might go explicit, current causes. New, regional faces protect international, deep institutions. Increasing, other c	Books	arts	9.47	AAAAAAAAEBEKAAAA	18568.47036743164	0.34034341999253154
+Issues might not lose very bold, different opportunities. Of course absolute areas might balance bottom mechanisms. A	Books	arts	0.75	AAAAAAAAEEIAAAAA	26942.80990600586	0.4938375583000187
+Added actions get; there delightful bodies score about dead, united children; still large guests believe. Rapid successes say normally yesterday delicious changes. Detail	Books	arts	8.38	AAAAAAAAEGANAAAA	25803.820140838623	0.4729608967149359
+Much serious comments should realise else outstanding successful parts. Sma	Books	arts	8.02	AAAAAAAAEIIMAAAA	18850.59983062744	0.34551460019664426
+Painfully other police say digital	Books	arts	4.68	AAAAAAAAELHMAAAA	37768.95939922333	0.692271175661129
+Critical, other girls see gentle factors. Good, classic tactics cause as always only nations. Other, reasonable objects may develop	Books	arts	8.79	AAAAAAAAEOJEAAAA	15740.639976501465	0.28851182334706615
+Economic, significant organisations tear. Dramatically social computers evaluate financial, en	Books	arts	2.27	AAAAAAAAEPGNAAAA	60194.82992553711	1.1033172834020468
+Central things should concentrate educational, bad trends. Groups might not go accused, heavy ages. Only necessary offers sleep even virtually able bodies; popular, new 	Books	arts	1.1	AAAAAAAAFAAOAAAA	22112.54051589966	0.4053030494695332
+Years light glasses. Contemporary members might detect even drawings. Private instructions ought to expect well main streets. Children will say well; usually young members ought to ensure enough. 	Books	arts	4.78	AAAAAAAAFBMBAAAA	43704.76972579956	0.8010692590249217
+Golden estates meet as yet hands. About solid proteins used to tell. Once causal boots imagine frequently new elections; flexible, other ways find re	Books	arts	9.76	AAAAAAAAFCFBAAAA	34540.62018966675	0.6330986113230548
+Brilliant, acceptable resources might not pick as. Positive, married parties support only strongly impossible needs. Photogra	Books	arts	2.44	AAAAAAAAFCKCAAAA	43086.41090774536	0.7897352960891143
+Procedures shall break right unemployed reasons. Better english days move topics. Ways provide other, other signals. Windows used to influence however ha	Books	arts	7.41	AAAAAAAAFDAOAAAA	18712.400250911713	0.3429815257607188
+Local times understand. Often clear mice	Books	arts	2.57	AAAAAAAAFFEIAAAA	15610.210153102875	0.28612116158085205
+Writers drive surely; sheets will give. Teeth might include scottish, superb colours; debts would affect just at the advantages; natural programmes shall build other, only eyes. Of course volun	Books	arts	4.6	AAAAAAAAFJAOAAAA	21904.759857177734	0.4014946162169076
+Intimately alive police would not relieve ther	Books	arts	26.86	AAAAAAAAFMIGAAAA	10269.930053710938	0.18823861354216267
+At all christian areas collect through a costs. Numbers would learn suddenly new movements. Needs might teach also that 	Books	arts	9.56	AAAAAAAAFNHGAAAA	17652.459686279297	0.3235537651742279
+Fundamental, red drivers show in public in a houses. Political houses mean no longer long cities. 	Books	arts	3.12	AAAAAAAAFNKGAAAA	33856.49962449074	0.6205592945009426
+Regions like for example then new men. Shops mi	Books	arts	4.62	AAAAAAAAFOHLAAAA	17664.350021362305	0.3237717043596821
+Years shall clean only minutes. Positions meet high emotional, concerned languages. Local, average relations could act.	Books	arts	1.52	AAAAAAAAFONOAAAA	21493.94026184082	0.393964661228146
+Occasional, essential birds try within a times; difficult, burning tenants understand. Cautiously	Books	arts	0.64	AAAAAAAAGBHIAAAA	34859.04037475586	0.6389349679342038
+Teams will provide journalists. Minu	Books	arts	1.68	AAAAAAAAGBJAAAAA	24449.800052642822	0.4481429220279402
+All m	Books	arts	61.18	AAAAAAAAGEAGAAAA	24556.87003135681	0.4501054187771588
+So afraid events eat more statutory eyes; improvements pass now contemporary books; stages could put just broadly sure directors; key, mathematical reasons should mean. Old fac	Books	arts	0.41	AAAAAAAAGEEJAAAA	37084.6994934082	0.6797293048499847
+Remote daughters move before here modern opportunities. Late, electronic letters take manually general repor	Books	arts	1.77	AAAAAAAAGFJGAAAA	45941.80038499832	0.8420720260872665
+Present ministers switch. Parties ought to a	Books	arts	9.42	AAAAAAAAGKMHAAAA	27445.680182933807	0.5030547197826596
+Old, professional neighbours should continue as. Co	Books	arts	4.51	AAAAAAAAGLOAAAAA	10690.529968261719	0.19594783301658183
+Close appearances should proceed once; bones move strongly. New standards may result completely youngsters. Modest expressions count possibly. In order left lines exceed depen	Books	arts	5.94	AAAAAAAAGLPOAAAA	25414.100173950195	0.4658176790052625
+Members reinforce ever successful, economic members. Useful suggestions should want working, profitable holes. Past mountains might not explore specially cities. Bases 	Books	arts	4.74	AAAAAAAAGMAFAAAA	43495.35947418213	0.7972309567950309
+Professional, likely elections collect children. New figures would continue however well only rates. Also concerned territories cover at all new, star losses. Much black exports would develop liabili	Books	arts	4.21	AAAAAAAAGMFDAAAA	52253.01036071777	0.9577508485709327
+Perfect, central readers would call really closely other plants. Voters cannot acquire by now no longer n	Books	arts	7.45	AAAAAAAAGMKEAAAA	28776.339874267578	0.5274445193317424
+Ago possible girls should know holidays. A	Books	arts	7.37	AAAAAAAAGMLCAAAA	21567.360313415527	0.3953103849713786
+Economic, free terms must rely never pp.. Only successive months play before new points. Subjects distinguish blue, british men. Current, important problem	Books	arts	7.74	AAAAAAAAGNPKAAAA	20614.9695892334	0.3778539165696605
+Pupils apply both grand, brown pools. Descriptions like political substances. American, 	Books	arts	8.93	AAAAAAAAGOAFAAAA	28017.29963684082	0.5135319920634287
+Time taken: 70.746 seconds, Fetched: 100 row(s)
+24.00user 1.84system 1:36.47elapsed 26%CPU (0avgtext+0avgdata 629752maxresident)k
+164048inputs+944outputs (141major+120203minor)pagefaults 0swaps

@@ -49,3 +49,7 @@ There maybe collection4 class not found error, please do
     - The script is placed under the repository (/home/ubuntu/big-data-system)
     - The script will run all the workload (creating a 10Gb database; running a MapReduce job on Hive for the database; and then running a Tez job on Hive for the database). It shows the elasped-time of the MR job and the Tez job.
 
+## Experiment
+* `./run_all.sh`
+* collect all dstat.csv and outputs from run_all `./collect.sh`
+

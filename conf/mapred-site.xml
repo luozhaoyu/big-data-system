@@ -26,8 +26,8 @@
   </property>
 
   <property>
-  	<name>mapreduce.reduce.shuffle.parallelcopies</name>
-    <value>5</value>
+    <name>mapreduce.reduce.shuffle.parallelcopies</name>
+    <value>10</value>
   </property>
 
   <property>

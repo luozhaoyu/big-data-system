@@ -1,13 +1,4 @@
-hive start:2015-09-25T08:48:35
-
-Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
-Hive history file=/tmp/ubuntu/hive_job_log_14a30a32-12d6-4ea7-a30c-5dba482d3b72_1550424170.txt
-OK
-Time taken: 5.909 seconds
-Query ID = ubuntu_20150925085029_b395928e-7e7a-4d0a-8faa-a447a02f359b
-Total jobs = 8
-Stage-16 is selected by condition resolver.
-Stage-1 is filtered out by condition resolver.
+hive start:2015-09-25T23:43:30
 Command exited with non-zero status 130
-27.46user 1.88system 2:32.47elapsed 19%CPU (0avgtext+0avgdata 615104maxresident)k
-128104inputs+1336outputs (144major+113692minor)pagefaults 0swaps
+1.77user 0.30system 0:07.51elapsed 27%CPU (0avgtext+0avgdata 73912maxresident)k
+52528inputs+400outputs (133major+35607minor)pagefaults 0swaps

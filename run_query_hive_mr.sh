@@ -1,11 +1,13 @@
 #!/bin/sh
 output=tpcds_query.mr.$1.out
+option="--hiveconf mapred.reduce.tasks=$2"
+
 if [ -z "$1" ]
 then
     printf "Please input a number!\n"
     exit 1
 else
-    cmd="(time hive --hiveconf hive.execution.engine=mr -f ~/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query$1.sql --database tpcds_text_db_1_50) >> $output 2>&1"
+    cmd="(time hive --hiveconf hive.execution.engine=mr $option -f ~/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query$1.sql --database tpcds_text_db_1_50) >> $output 2>&1"
 fi
 
 

@@ -15,8 +15,10 @@ import datetime
 
 def get_json(filepath):
     headers = [
-        "filename",
+        #"filename",
         "taskid",
+        "entity",
+        "eventtype",
         "tasktype",
         "type",
         "starttime",
@@ -38,8 +40,8 @@ def get_json(filepath):
                 v = v.strip('"')
                 if v.isdigit():
                     v = datetime.datetime.fromtimestamp(float(v) / 1000).strftime('%Y-%m-%d %H:%M:%S')
-                if k.startswith("jhist"):
-                    m["filename"] = k
+                if k.startswith("jhist") or k.startswith("history"):
+                    #m["filename"] = k
                     output_line = ",".join([m[i] for i in headers])
                     out.write(output_line + "\n")
                     m = {}

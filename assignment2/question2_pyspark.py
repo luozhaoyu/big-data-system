@@ -133,15 +133,7 @@ def query12_input(query_name, conf=None, output_persist=False):
     return res
 
 
-def run_all():
-    sparkConf = pyspark.SparkConf()
-    sparkConf.setAppName("CS-838-Assignment2-Question2")
-    sparkConf.set("spark.driver.memory", "1g")
-    sparkConf.set("spark.cores.max", "4")
-    sparkConf.set("spark.executor.memory", "21000m")
-    sparkConf.set("spark.task.cpus", "1")
-    sparkConf.set("spark.eventLog.enabled", "true")
-    sparkConf.set("spark.eventLog.dir", "/home/ubuntu/storage/logs")
+def run_all(sparkConf):
     with open("question2.txt", "w") as f:
         res = str(query12_no("persist_no", conf=sparkConf))
         f.write(res + '\n')
@@ -155,25 +147,34 @@ def main():
     parser = argparse.ArgumentParser(description="""
     for question 2
         """)
-    parser.add_argument("-q", "--query", help="query type: no|input|output", default="no")
+    parser.add_argument("-q", "--query", help="query type: all|no|input|output: all means run all queries", default="all")
     args = parser.parse_args()
+    sparkConf = pyspark.SparkConf()
+    sparkConf.setAppName("CS-838-Assignment2-Question2")
+    sparkConf.set("spark.driver.memory", "1g")
+    sparkConf.set("spark.cores.max", "4")
+    sparkConf.set("spark.executor.memory", "21000m")
+    sparkConf.set("spark.task.cpus", "1")
+    sparkConf.set("spark.eventLog.enabled", "true")
+    sparkConf.set("spark.eventLog.dir", "/home/ubuntu/storage/logs")
 
-    run_all()
-#    if args.query == "no":
-#        with open("persist_no", "w") as f:
-#            res = str(query12_no(sparkConf))
-#            print res
-#            f.write(res)
-#    elif args.query == "input":
-#        with open("persist_input", "w") as f:
-#            res = str(query12_input(sparkConf))
-#            print res
-#            f.write(res)
-#    elif args.query == "output":
-#        with open("persist_input", "w") as f:
-#            res = str(query12_output(sparkConf))
-#            print res
-#            f.write(res)
+    if args.query == "all":
+        run_all(sparkConf)
+    elif args.query == "no":
+        with open("question2.txt", "w") as f:
+            res = str(query12_no("persist_no", conf=sparkConf))
+            print res
+            f.write(res)
+    elif args.query == "input":
+        with open("question2.txt", "w") as f:
+            res = str(query12_input("persist_input", conf=sparkConf))
+            print res
+            f.write(res)
+    elif args.query == "output":
+        with open("question2.txt", "w") as f:
+            res = str(query12_input("persist_output", conf=sparkConf, output_persist=True))
+            print res
+            f.write(res)
 
 
 if __name__ == '__main__':

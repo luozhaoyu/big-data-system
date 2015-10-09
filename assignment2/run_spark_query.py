@@ -6,33 +6,22 @@ import subprocess
 import argparse
 import time
 
-def execute(cmd, ignored_returns=[], verbose=False):
-    result = None
-    try:
-        if verbose:
-            print "RUNNING: %s" % cmd
-        result = subprocess.check_output(cmd,
-            stderr=subprocess.STDOUT,
-            shell=True)
-    except subprocess.CalledProcessError as e:
-        if e.returncode in ignored_returns:
-            return e.output
-        else:
-            print e.cmd, e.output
-            raise e
-    return result
-
-
-def execute_in_background(cmd, output_file):
-    output_file = open(output_file, 'a')
-    print "execute in background: %s" % cmd
-    subprocess.Popen(cmd, shell=True, stdout=output_file, stderr=output_file)
+from shell import execute, execute_in_background
 
 
 def rm_local_dirs():
     hosts = ["group-2-vm1", "group-2-vm2", "group-2-vm3", "group-2-vm4"]
     for host in hosts:
         execute("ssh ubuntu@%s rm -rf $SPARK_LOCAL_DIRS/*" % host, verbose=True)
+
+
+def rm_eventlog_dir():
+    return execute("rm -rf $HOME/storage/logs/*", verbose=True)
+
+
+def collect_eventlogs(query_name):
+    execute("mkdir -p output/%s" % query_name, verbose=True)
+    return execute("cp -rf $HOME/storage/logs/* output/%s" % query_name, verbose=True)
 
 
 def sync_caches():
@@ -106,25 +95,49 @@ def get_io_bandwidth():
             e['net_write'] - s['net_write'],)
 
 
-def run_spark_query(query_no):
-    # rm before restart!
-    rm_local_dirs()
-    restart_thrift()
-    sync_caches()
-    start_time = time.time()
-    start_io = get_disk_net_read_write()
-    cmd = "(time /home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/bin/beeline -u jdbc:hive2://group-2-vm1:10000/tpcds_text_db_1_50 -n ubuntu -f $HOME/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query%s.sql) 2> $HOME/big-data-system/assignment2/output/tpcds_query%s_spark.out" % (query_no, query_no)
-    res = execute(cmd, verbose=True)
-    end_time = time.time()
-    end_io = get_disk_net_read_write()
-    return {
-        "time": end_time - start_time,
-        "disk_read": end_io['disk_read'] - start_io['disk_read'],
-        "disk_write": end_io['disk_write'] - start_io['disk_write'],
-        "net_read": end_io['net_read'] - start_io['net_read'],
-        "net_write": end_io['net_write'] - start_io['net_write'],
-        "output": res,
-    }
+def clean_collect_logs(func):
+    def do(query_name, *args, **kwargs):
+        # rm before restart!
+        # for question1 part A c
+        rm_eventlog_dir()
+        rm_local_dirs()
+        restart_thrift()
+        sync_caches()
+
+        res = func(query_name, *args, **kwargs)
+
+        # for question1 part A c
+        collect_eventlogs(query_name)
+        return res
+    return do
+
+
+def get_statistics(func):
+    def do(*args, **kwargs):
+        start_time = time.time()
+        start_io = get_disk_net_read_write()
+
+        output = func(*args, **kwargs)
+
+        end_time = time.time()
+        end_io = get_disk_net_read_write()
+        return {
+            "time": end_time - start_time,
+            "disk_read": end_io['disk_read'] - start_io['disk_read'],
+            "disk_write": end_io['disk_write'] - start_io['disk_write'],
+            "net_read": end_io['net_read'] - start_io['net_read'],
+            "net_write": end_io['net_write'] - start_io['net_write'],
+            "output": output,
+        }
+    return do
+
+
+@clean_collect_logs
+@get_statistics
+def run_spark_query(query_name):
+    cmd = "(time /home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/bin/beeline -u jdbc:hive2://group-2-vm1:10000/tpcds_text_db_1_50 -n ubuntu -f $HOME/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query%s.sql) 2> $HOME/big-data-system/assignment2/output/tpcds_query%s_spark.out" % (query_name, query_name)
+    output = execute(cmd, verbose=True)
+    return output
 
 
 def main():

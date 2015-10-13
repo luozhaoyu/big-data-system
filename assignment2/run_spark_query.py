@@ -7,6 +7,7 @@ import argparse
 import time
 
 from shell import execute, execute_in_background
+from threading import Timer
 
 
 def rm_local_dirs():
@@ -29,10 +30,15 @@ def sync_caches():
     for host in hosts:
         execute("ssh ubuntu@%s \"sudo sh -c 'sync; echo 3 > /proc/sys/vm/drop_caches'\"" % host, verbose=True)
 
+def restart_spark():
+    stop_cmd = "/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/sbin/stop-all.sh"
+    start_cmd = "/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/sbin/start-all.sh"
+    execute(stop_cmd, verbose=True)
+    execute(start_cmd, verbose=True)
 
-def start_thrift():
+def start_thrift(custom_conf=""):
     log_file = "thriftserver.out.%s" % (datetime.datetime.isoformat(datetime.datetime.now()))
-    cmd = "/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/java -cp /home/ubuntu/conf/:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/spark-assembly-1.5.0-hadoop2.6.0.jar:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/datanucleus-rdbms-3.2.9.jar:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/datanucleus-api-jdo-3.2.6.jar:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/*:/home/ubuntu/conf/:/home/ubuntu/conf/ -Xms1g -Xmx1g -XX:MaxPermSize=256m org.apache.spark.deploy.SparkSubmit --master spark://10.0.1.27:7077 --conf spark.executor.cores=4 --conf spark.executor.memory=21000m --conf spark.eventLog.enabled=true --conf spark.eventLog.dir=/home/ubuntu/storage/logs --conf spark.driver.memory=1g --conf spark.task.cpus=1 --class org.apache.spark.sql.hive.thriftserver.HiveThriftServer2 spark-internal"
+    cmd = "/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin/java -cp /home/ubuntu/conf/:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/spark-assembly-1.5.0-hadoop2.6.0.jar:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/datanucleus-rdbms-3.2.9.jar:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/datanucleus-api-jdo-3.2.6.jar:/home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/lib/*:/home/ubuntu/conf/:/home/ubuntu/conf/ -Xms1g -Xmx1g -XX:MaxPermSize=256m org.apache.spark.deploy.SparkSubmit --master spark://10.0.1.27:7077 --conf spark.executor.cores=4 --conf spark.executor.memory=21000m --conf spark.eventLog.enabled=true --conf spark.eventLog.dir=/home/ubuntu/storage/logs --conf spark.driver.memory=1g --conf spark.task.cpus=1 %s --class org.apache.spark.sql.hive.thriftserver.HiveThriftServer2 spark-internal" % (custom_conf)
     execute_in_background(cmd, log_file)
 
     # wait until it gets up and listen at 100000
@@ -48,7 +54,7 @@ def start_thrift():
     return True
 
 
-def restart_thrift():
+def restart_thrift(custom_conf=""):
     while True:
         kill_thrift = "ps -ef |grep hive.thriftserver|grep -v grep | awk '{print $2}' | xargs kill"
         execute(kill_thrift, ignored_returns=[123], verbose=True)
@@ -59,7 +65,7 @@ def restart_thrift():
                 break
         else:
             time.sleep(1)
-    return start_thrift()
+    return start_thrift(custom_conf)
 
 
 def get_disk_net_read_write():
@@ -139,17 +145,120 @@ def run_spark_query(query_name):
     output = execute(cmd, verbose=True)
     return output
 
+def run_spark_query_with_all_partitions(query_name):
+    partitions_settings = [5, 10, 100, 200]
+    res = []
+    for n in partitions_settings:
+        cmd = "(time /home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/bin/beeline -u jdbc:hive2://group-2-vm1:10000/tpcds_text_db_1_50 -n ubuntu -f $HOME/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query%s.sql) 2> $HOME/big-data-system/assignment2/output/tpcds_query%s_spark_partition%d.out" % (query_name, query_name, n)
+        custom_conf = "--conf spark.sql.shuffle.partitions=%d" % (n)
+        rm_eventlog_dir()
+        rm_local_dirs()
+        restart_thrift(custom_conf)
+        sync_caches()
+        res.append(execute(cmd, verbose=True))
+    return res
+
+# partitions=10 is the best case
+def run_spark_query_with_all_memoryFractions(query_name):
+    memoryFractions_settings = ["0.02", "0.05", "0.1", "0.2", "0.4", "0.9"]
+    res = []
+    for n in memoryFractions_settings:
+        cmd = "(time /home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/bin/beeline -u jdbc:hive2://group-2-vm1:10000/tpcds_text_db_1_50 -n ubuntu -f $HOME/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query%s.sql) 2> $HOME/big-data-system/assignment2/output/tpcds_query%s_spark_memoryFraction%s.out" % (query_name, query_name, n)
+        custom_conf = "--conf spark.sql.shuffle.partitions=10 --conf spark.storage.memoryFraction=%s" % (n)
+        rm_eventlog_dir()
+        rm_local_dirs()
+        restart_thrift(custom_conf)
+        sync_caches()
+        res.append(execute(cmd, verbose=True))
+    return res
+
+def find_worker_pid():
+    jps_cmd = "jps"
+    worker_pid = None
+    process_list = execute(jps_cmd, verbose=True)
+    for line in process_list.split('\n'):
+        toks = line.split(' ')
+        if len(toks) > 1 and toks[1].strip() == 'Worker':
+            worker_pid = toks[0]
+    if worker_pid != None:
+        return worker_pid
+    else:
+        return None
+
+def kill_worker():
+    worker_pid = find_worker_pid()
+    if worker_pid is None:
+        print "Error: failed to find worker pid"
+        return
+    fail_cmd = "sudo kill -9 %s" % (worker_pid)
+    execute(fail_cmd, verbose=True)
+
+def run_spark_query_with_fail_tests(query_name):
+    # measure the elapsed time for the query at first
+    cmd = "(time /home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/bin/beeline -u jdbc:hive2://group-2-vm1:10000/tpcds_text_db_1_50 -n ubuntu -f $HOME/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query%s.sql) 2> $HOME/big-data-system/assignment2/output/tpcds_query%s_spark_failtest_no.out" % (query_name, query_name)
+    #custom_conf = "--conf spark.sql.shuffle.partitions=10 --conf spark.storage.memoryFraction=0.02"
+    custom_conf=""
+    rm_eventlog_dir()
+    rm_local_dirs()
+    restart_spark()
+    restart_thrift(custom_conf)
+    sync_caches()
+    start_time = time.time()
+    execute(cmd, verbose=True)
+    elapsed_time = time.time() - start_time
+    fail_timing25 = elapsed_time / 4.0 + 5
+    fail_timing75 = elapsed_time / 4.0 * 3.0 - 5
+    print "The task took %f seconds. The 25 failing timing would be %f; and the 75 failing timing would be %f" % (elapsed_time, fail_timing25, fail_timing75)
+    # start the failing
+    fail_cases = ["_orig", "1-25%", "1-75%", "2-25%", "2-75%"]
+    res = []
+    for case in fail_cases:
+        cmd = "(time /home/ubuntu/software/spark-1.5.0-bin-hadoop2.6/bin/beeline -u jdbc:hive2://group-2-vm1:10000/tpcds_text_db_1_50 -n ubuntu -f $HOME/workload/hive-tpcds-tpch-workload/sample-queries-tpcds/query%s.sql) 2> $HOME/big-data-system/assignment2/output/tpcds_query%s_spark_failtest%s.out" % (query_name, query_name, case)
+        custom_conf = "--conf spark.sql.shuffle.partitions=10 --conf spark.storage.memoryFraction=0.02"
+        rm_eventlog_dir()
+        rm_local_dirs()
+        restart_spark()
+        restart_thrift(custom_conf)
+        sync_caches()
+        if "1-" in case:
+            if "25%" in case:
+                print "Set a timer for failing-task-1 at 25%"
+                t = Timer(fail_timing25, sync_caches)
+                t.start()
+            elif "75%" in case:
+                print "Set a timer for failing-task-1 at 75%"
+                t = Timer(fail_timing75, sync_caches)
+                t.start()
+        elif "2-" in case:
+            if "25%" in case:
+                print "Set a timer for failing-task-2 at 25%"
+                t = Timer(fail_timing25, kill_worker)
+                t.start()
+            elif "75%" in case:
+                print "Set a timer for failing-task-2 at 75%"
+                t = Timer(fail_timing75, kill_worker)
+                t.start()
+
+        res.append(execute(cmd, verbose=True))
+    return res
 
 def main():
     parser = argparse.ArgumentParser(description="""
         use this tool to run all spark queries
         """)
     parser.add_argument("-q", "--query", help="tcpds query number", default=12)
+    parser.add_argument("-f", "--function", help="run q1-part2&3", default=0)
     args = parser.parse_args()
-    res = run_spark_query(args.query)
-    #restart_thrift()
-    print [(i, res[i]) for i in res if i != "output"]
-    print len(res["output"])
+    if args.function == 0:
+        res = run_spark_query(args.query)
+        #restart_thrift()
+        print [(i, res[i]) for i in res if i != "output"]
+        print len(res["output"])
+    elif args.function == "1":
+        res = run_spark_query_with_fail_tests(args.query)
+    elif args.function == "2":
+        restart_spark()
+        res = run_spark_query_with_all_memoryFractions(args.query)
 
 
 if __name__ == '__main__':

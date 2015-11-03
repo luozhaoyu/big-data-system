@@ -1,8 +1,0 @@
-
-Logging initialized using configuration in jar:file:/home/ubuntu/software/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
-Hive history file=/tmp/ubuntu/hive_job_log_385927b3-5433-4e8f-bafa-26eb7f37dbfd_2018538944.txt
-FAILED: SemanticException [Error 10072]: Database does not exist: tpcds_db_1
-
-real	0m9.370s
-user	0m13.574s
-sys	0m0.775s

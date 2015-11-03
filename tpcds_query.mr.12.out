@@ -1,4 +1,0 @@
-hive start:2015-09-25T23:43:30
-Command exited with non-zero status 130
-1.77user 0.30system 0:07.51elapsed 27%CPU (0avgtext+0avgdata 73912maxresident)k
-52528inputs+400outputs (133major+35607minor)pagefaults 0swaps

@@ -1,4 +1,15 @@
 <configuration>
+  <property>
+    <key>hive.server2.logging.operation.log.location</key>
+    <value>/home/ubuntu/logs/operation_logs</value>
+    <description>add by lzy</description>
+  </property>
+
+  <property>
+    <key>hive.metastore.uris</key>
+    <value>thrift://10.0.1.27:9083</value>
+    <description>for assignment 2</description>
+  </property>
 
  
   <property>
@@ -9,7 +20,7 @@
 
   <property>
     <name>javax.jdo.option.ConnectionURL</name>
-    <value>jdbc:mysql://group-2-vm1:3306/metastore?createDatabaseIfNotExist=true</value>
+    <value>jdbc:mysql://10.0.1.27:3306/metastore?createDatabaseIfNotExist=true</value>
     <description>the URL of the MySQL database</description>
   </property>
 

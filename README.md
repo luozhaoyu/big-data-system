@@ -16,13 +16,8 @@ Big Data System
 - `source run.sh`
 - `hadoop namenode -format`
 - `start_all`
-- monitor and debug
+- debug
     * `hadoop jar ~/software/hadoop-2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar pi 1 2`
-    * `jps`
-    * HDFS <http://130.127.132.234:50070>
-    * YARN <http://130.127.132.234:8088>
-    * MapReduce job history <http://130.127.132.234:19888>
-    * application history <http://130.127.132.234:8188>
 
 ## Tez
 1. `./tez.sh`
@@ -53,3 +48,12 @@ There maybe collection4 class not found error, please do
 * `./run_all.sh`
 * collect all dstat.csv and outputs from run_all `./collect.sh`
 
+## Monitor
+* `jps`
+* HDFS <http://130.127.132.234:50070>
+* YARN <http://130.127.132.234:8088>
+* MapReduce job history <http://130.127.132.234:19888>
+* application history <http://130.127.132.234:8188>
+* Spark Master <http://130.127.132.234:8080/>
+* Spark Worker <http://130.127.132.234:8081/>
+* Storm UI <http://130.127.132.234:8085/>

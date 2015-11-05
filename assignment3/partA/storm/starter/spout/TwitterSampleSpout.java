@@ -119,6 +119,7 @@ public class TwitterSampleSpout extends BaseRichSpout {
 
 		else {
 			FilterQuery query = new FilterQuery();
+			//query.count(500000);
 			query.track(keyWords);
 			query.language(new String[]{"en"});
 			twitterStream.filter(query);

@@ -41,7 +41,7 @@ import backtype.storm.tuple.Values;
 import backtype.storm.utils.Utils;
 
 @SuppressWarnings("serial")
-public class TwitterSampleSpout extends BaseRichSpout {
+public class TwitterNoKeywordSpout extends BaseRichSpout {
 
 	SpoutOutputCollector _collector;
 	LinkedBlockingQueue<Status> queue = null;
@@ -50,18 +50,16 @@ public class TwitterSampleSpout extends BaseRichSpout {
 	String consumerSecret;
 	String accessToken;
 	String accessTokenSecret;
-	String[] keyWords;
 
-	public TwitterSampleSpout(String consumerKey, String consumerSecret,
-			String accessToken, String accessTokenSecret, String[] keyWords) {
+	public TwitterNoKeywordSpout(String consumerKey, String consumerSecret,
+			String accessToken, String accessTokenSecret) {
 		this.consumerKey = consumerKey;
 		this.consumerSecret = consumerSecret;
 		this.accessToken = accessToken;
 		this.accessTokenSecret = accessTokenSecret;
-		this.keyWords = keyWords;
 	}
 
-	public TwitterSampleSpout() {
+	public TwitterNoKeywordSpout() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -112,17 +110,11 @@ public class TwitterSampleSpout extends BaseRichSpout {
 		AccessToken token = new AccessToken(accessToken, accessTokenSecret);
 		twitterStream.setOAuthAccessToken(token);
 		
-		if (keyWords.length == 0) {
+//		twitterStream.sample();
 
-			twitterStream.sample();
-		}
-
-		else {
-			FilterQuery query = new FilterQuery();
-			query.track(keyWords);
-			query.language(new String[]{"en"});
-			twitterStream.filter(query);
-		}
+		FilterQuery query = new FilterQuery();
+		query.language(new String[]{"en"});
+		twitterStream.filter(query);
 	}
 
 	@Override

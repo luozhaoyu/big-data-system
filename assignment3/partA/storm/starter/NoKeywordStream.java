@@ -22,25 +22,24 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import storm.starter.bolt.SmartPrinterBolt;
-import storm.starter.spout.TwitterSampleSpout;
+import storm.starter.spout.TwitterNoKeywordSpout;
 import backtype.storm.Config;
 import backtype.storm.LocalCluster;
 import backtype.storm.topology.TopologyBuilder;
 
-public class PrintSampleStream {        
+public class NoKeywordStream {        
     public static void main(String[] args) {
         String consumerKey = "42NRnxnkuqrghnolDWSqbiFyv"; 
         String consumerSecret = "zmwC0g6z1FOBBQigW8w2lrnLYncuH4p3QX25RUCNa8aU1QSCC5"; 
         String accessToken = "2809571326-fyBz1ITFXf4yjuqZvHKgGyy0QcQfNVr8y2OGYq6"; 
         String accessTokenSecret = "MAnEtUccHXheXf0z2pauV75oj2XOm6ag4hiLvbUOh6n6B";
-        String[] keyWords = new String[]{"cat", "car", "Stockholm", "snow", "data", "system", "Trump", "Palantir", "blue", "badger"};
+        //String[] keyWords = new String[]{"cat", "car", "Stockholm", "snow", "data", "system", "Trump", "Palantir", "blue", "badger"};
         
         TopologyBuilder builder = new TopologyBuilder();
         Date date = new Date();
         
-        builder.setSpout("twitter", new TwitterSampleSpout(consumerKey, consumerSecret,
-                                accessToken, accessTokenSecret, keyWords));
-        builder.setBolt("print", new SmartPrinterBolt(  "/users/zhaoyu/tweets/tweet-" + new SimpleDateFormat("MMddHHmmss").format(date) + ".txt"))
+        builder.setSpout("twitter", new TwitterNoKeywordSpout(consumerKey, consumerSecret, accessToken, accessTokenSecret));
+        builder.setBolt("print", new SmartPrinterBolt(  "/users/zhaoyu/tweets/nokeyword-" + new SimpleDateFormat("MMddHHmmss").format(date) + ".txt"))
                 .shuffleGrouping("twitter");
                 
                 

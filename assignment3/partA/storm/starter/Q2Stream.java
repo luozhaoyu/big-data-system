@@ -27,7 +27,7 @@ import backtype.storm.Config;
 import backtype.storm.LocalCluster;
 import backtype.storm.topology.TopologyBuilder;
 
-public class NoKeywordStream {        
+public class Q2Stream {        
     public static void main(String[] args) {
         String consumerKey = "42NRnxnkuqrghnolDWSqbiFyv"; 
         String consumerSecret = "zmwC0g6z1FOBBQigW8w2lrnLYncuH4p3QX25RUCNa8aU1QSCC5"; 
@@ -39,14 +39,7 @@ public class NoKeywordStream {
         		"procrastination", "cook", "college", "patriots", "dumnass", "dough", "winter", "game", "thrones", "halloween", "warcraft",
         		"hiking", "intern", "park", "sweater", "epic", "dota", "year", "wrath", "waste", "Blake", "street", "toyota", "arrow", 
         		"warning", "travel", "flight", "reject", "karaoke", "bless", "empire", "survivor", "bank", "dating", "restaurant", "tinder",
-        		"shopping", "win", "cold", "recap", "cop", "astronaut", "crime", "book", "http", "injured", "china", "awards", "join", 
-        		"ugly", "birthday", "friend", "weather", "shirt", "student", "mail", "sleep", "pet", "sea", "dream", "chritmas", "thanksgiving",
-        		"vacation", "california", "church", "love", "fuck", "vote", "election", "bernie", "parade", "disney", "today", "city",
-        		"marathon", "trade", "cash", "miles", "fun", "work", "free", "photo", "hard", "water", "god", "speech", "gang", "bear", 
-        		"stop", "luck", "vegas", "shame", "food", "fool", "weight", "football", "tennis", "concert", "cancer", "stock", "crazy",
-        		"ticket", "play", "project", "russia", "cast", "star", "trailer", "yelp", "video", "hawaii", "law", "rage", "comic", "meme",
-        		"swag", "snack", "drink", "alcohol", "peace", "swift", "maroon", "xbox", "surface"};        
-        
+        		"shopping", "win"};
         
         TopologyBuilder builder = new TopologyBuilder();
         Date date = new Date();

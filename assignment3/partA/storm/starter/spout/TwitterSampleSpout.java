@@ -123,7 +123,6 @@ public class TwitterSampleSpout extends BaseRichSpout {
 			query.language(new String[]{"en"});
 			twitterStream.filter(query);
 		}
-
 	}
 
 	@Override
@@ -132,8 +131,7 @@ public class TwitterSampleSpout extends BaseRichSpout {
 		if (ret == null) {
 			Utils.sleep(50);
 		} else {
-			_collector.emit(new Values(ret));
-
+			_collector.emit(new Values(ret.getText()));
 		}
 	}
 

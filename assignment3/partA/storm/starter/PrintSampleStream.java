@@ -40,7 +40,7 @@ public class PrintSampleStream {
         
         builder.setSpout("twitter", new TwitterSampleSpout(consumerKey, consumerSecret,
                                 accessToken, accessTokenSecret, keyWords));
-        builder.setBolt("print", new SmartPrinterBolt(  "/users/zhaoyu/tweets/tweet-" + new SimpleDateFormat("MMddHHmmss").format(date) + ".txt"))
+        builder.setBolt("print", new SmartPrinterBolt(  "/u/y/i/yiran/install/tweets/tweet-" + new SimpleDateFormat("MMddHHmmss").format(date) + ".txt"))
                 .shuffleGrouping("twitter");
                 
                 

@@ -110,9 +110,10 @@ public class TwitterNoKeywordSpout extends BaseRichSpout {
 		AccessToken token = new AccessToken(accessToken, accessTokenSecret);
 		twitterStream.setOAuthAccessToken(token);
 		
-//		twitterStream.sample();
+		twitterStream.sample();
 
 		FilterQuery query = new FilterQuery();
+		query.count(1000000);
 		query.language(new String[]{"en"});
 		twitterStream.filter(query);
 	}

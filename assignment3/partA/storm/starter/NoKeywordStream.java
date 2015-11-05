@@ -39,7 +39,7 @@ public class NoKeywordStream {
         Date date = new Date();
         
         builder.setSpout("twitter", new TwitterNoKeywordSpout(consumerKey, consumerSecret, accessToken, accessTokenSecret));
-        builder.setBolt("print", new SmartPrinterBolt(  "/users/zhaoyu/tweets/nokeyword-" + new SimpleDateFormat("MMddHHmmss").format(date) + ".txt"))
+        builder.setBolt("print", new SmartPrinterBolt(  "/u/y/i/yiran/install/tweets/nokeyword-" + new SimpleDateFormat("MMddHHmmss").format(date) + ".txt"))
                 .shuffleGrouping("twitter");
                 
                 

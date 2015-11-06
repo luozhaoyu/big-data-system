@@ -29,7 +29,8 @@ def write_random_folder(folderpath, num=200):
         print e
 
     for i in range(num):
-        filepath = os.path.join(folderpath, get_random_string(4))
+        #filepath = os.path.join(folderpath, get_random_string(4))
+        filepath = os.path.join(folderpath, str(random.randint(0, 100)))
         write_random_data(filepath)
 
 

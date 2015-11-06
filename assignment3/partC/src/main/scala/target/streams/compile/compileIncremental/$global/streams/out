@@ -1,0 +1,49 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set(/users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala)
+[debug] 	modified: Set()
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated sources: Set(/users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated sources: Set(/users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala)
+[debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+[info] Compiling 1 Scala source to /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/target/scala-2.10/classes...
+[debug] Getting compiler-interface from component compiler for Scala 2.10.5
+[debug] Getting compiler-interface from component compiler for Scala 2.10.5
+[debug] Running cached compiler 363abd0, interfacing (CompilerInterface) with Scala compiler version 2.10.5
+[debug] Calling Scala compiler with arguments  (CompilerInterface):
+[debug] 	-bootclasspath
+[debug] 	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/users/zhaoyu/.sbt/boot/scala-2.10.5/lib/scala-library.jar
+[debug] 	-classpath
+[debug] 	/users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/target/scala-2.10/classes
+[error] /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala:3: object apache is not a member of package org
+[error] import org.apache.spark._
+[error]            ^
+[error] /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala:4: object apache is not a member of package org
+[error] import org.apache.spark.graphx._
+[error]            ^
+[error] /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala:6: object apache is not a member of package org
+[error] import org.apache.spark.rdd.RDD
+[error]            ^
+[error] /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala:8: not found: type Graph
+[error] class MyVertex(n: String, m: Map[String, Int]) extends Graph {
+[error]                                                        ^
+[error] /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala:24: not found: value MyVertex
+[error]     var m = MyVertex(name, parseContent(content))
+[error]             ^
+[error] /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala:33: not found: type SparkConf
+[error] 	val sparkConf = new SparkConf().setAppName("Q1LargerEdgeNumber")
+[error] 	                    ^
+[error] /users/zhaoyu/codes/big-data-system/assignment3/partC/src/main/scala/q1.scala:34: not found: type SparkContext
+[error] 	val sc = new SparkContext(sparkConf)
+[error] 	             ^
+[error] 7 errors found
+[debug] Compilation failed (CompilerInterface)
+[error] (compile:compileIncremental) Compilation failed

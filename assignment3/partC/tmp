@@ -1,0 +1,845 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/11/05 22:37:18 INFO SparkContext: Running Spark version 1.5.1
+15/11/05 22:37:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/11/05 22:37:19 INFO SecurityManager: Changing view acls to: zhaoyu
+15/11/05 22:37:19 INFO SecurityManager: Changing modify acls to: zhaoyu
+15/11/05 22:37:19 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zhaoyu); users with modify permissions: Set(zhaoyu)
+15/11/05 22:37:21 INFO Slf4jLogger: Slf4jLogger started
+15/11/05 22:37:21 INFO Remoting: Starting remoting
+15/11/05 22:37:21 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.20.1.12:33283]
+15/11/05 22:37:21 INFO Utils: Successfully started service 'sparkDriver' on port 33283.
+15/11/05 22:37:21 INFO SparkEnv: Registering MapOutputTracker
+15/11/05 22:37:21 INFO SparkEnv: Registering BlockManagerMaster
+15/11/05 22:37:21 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-cc0e383b-25bf-42d7-911b-672ef9c4dfaf
+15/11/05 22:37:21 INFO MemoryStore: MemoryStore started with capacity 530.3 MB
+15/11/05 22:37:21 INFO HttpFileServer: HTTP File server directory is /tmp/spark-db54e876-5f02-47ac-9a3e-bb340fcf801e/httpd-c2603bc4-ffe9-458b-933a-d80483f9985c
+15/11/05 22:37:21 INFO HttpServer: Starting HTTP Server
+15/11/05 22:37:21 INFO Utils: Successfully started service 'HTTP file server' on port 40465.
+15/11/05 22:37:21 INFO SparkEnv: Registering OutputCommitCoordinator
+15/11/05 22:37:22 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+15/11/05 22:37:22 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+15/11/05 22:37:22 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+15/11/05 22:37:22 INFO SparkUI: Started SparkUI at http://172.20.1.12:4042
+15/11/05 22:37:22 INFO SparkContext: Added JAR file:/users/zhaoyu/codes/big-data-system/assignment3/partC/target/scala-2.10/simple-project_2.10-1.0.jar at http://172.20.1.12:40465/jars/simple-project_2.10-1.0.jar with timestamp 1446788242374
+15/11/05 22:37:22 WARN MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+15/11/05 22:37:22 INFO Executor: Starting executor ID driver on host localhost
+15/11/05 22:37:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 47032.
+15/11/05 22:37:23 INFO NettyBlockTransferService: Server created on 47032
+15/11/05 22:37:23 INFO BlockManagerMaster: Trying to register BlockManager
+15/11/05 22:37:23 INFO BlockManagerMasterEndpoint: Registering block manager localhost:47032 with 530.3 MB RAM, BlockManagerId(driver, localhost, 47032)
+15/11/05 22:37:23 INFO BlockManagerMaster: Registered BlockManager
+15/11/05 22:37:23 INFO MemoryStore: ensureFreeSpace(231056) called with curMem=0, maxMem=556038881
+15/11/05 22:37:23 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 225.6 KB, free 530.1 MB)
+15/11/05 22:37:24 INFO MemoryStore: ensureFreeSpace(19851) called with curMem=231056, maxMem=556038881
+15/11/05 22:37:24 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 19.4 KB, free 530.0 MB)
+15/11/05 22:37:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:47032 (size: 19.4 KB, free: 530.3 MB)
+15/11/05 22:37:24 INFO SparkContext: Created broadcast 0 from wholeTextFiles at q1.scala:81
+15/11/05 22:37:24 INFO FileInputFormat: Total input paths to process : 5
+15/11/05 22:37:24 INFO FileInputFormat: Total input paths to process : 5
+15/11/05 22:37:24 INFO CombineFileInputFormat: DEBUG: Terminated node allocation with : CompletedNodes: 1, size left: 1065
+15/11/05 22:37:24 INFO SparkContext: Starting job: count at q1.scala:89
+15/11/05 22:37:24 INFO DAGScheduler: Got job 0 (count at q1.scala:89) with 2 output partitions
+15/11/05 22:37:24 INFO DAGScheduler: Final stage: ResultStage 0(count at q1.scala:89)
+15/11/05 22:37:24 INFO DAGScheduler: Parents of final stage: List()
+15/11/05 22:37:24 INFO DAGScheduler: Missing parents: List()
+15/11/05 22:37:24 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at map at q1.scala:82), which has no missing parents
+15/11/05 22:37:24 INFO MemoryStore: ensureFreeSpace(2456) called with curMem=250907, maxMem=556038881
+15/11/05 22:37:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 2.4 KB, free 530.0 MB)
+15/11/05 22:37:24 INFO MemoryStore: ensureFreeSpace(1506) called with curMem=253363, maxMem=556038881
+15/11/05 22:37:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1506.0 B, free 530.0 MB)
+15/11/05 22:37:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:47032 (size: 1506.0 B, free: 530.3 MB)
+15/11/05 22:37:24 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:24 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at map at q1.scala:82)
+15/11/05 22:37:24 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+15/11/05 22:37:24 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2369 bytes)
+15/11/05 22:37:24 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2319 bytes)
+15/11/05 22:37:24 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+15/11/05 22:37:24 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+15/11/05 22:37:24 INFO Executor: Fetching http://172.20.1.12:40465/jars/simple-project_2.10-1.0.jar with timestamp 1446788242374
+15/11/05 22:37:24 INFO Utils: Fetching http://172.20.1.12:40465/jars/simple-project_2.10-1.0.jar to /tmp/spark-db54e876-5f02-47ac-9a3e-bb340fcf801e/userFiles-c5e518e0-5fb3-4c68-a2fe-604bb666e305/fetchFileTemp3311718613742672144.tmp
+15/11/05 22:37:24 INFO Executor: Adding file:/tmp/spark-db54e876-5f02-47ac-9a3e-bb340fcf801e/userFiles-c5e518e0-5fb3-4c68-a2fe-604bb666e305/simple-project_2.10-1.0.jar to class loader
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ihpw450282484
+this is:file:/users/zhaoyu/random/issr-1446521460
+this is:file:/users/zhaoyu/random/ynrg-274170573
+this is:file:/users/zhaoyu/random/fbxo657383674
+this is:file:/users/zhaoyu/random/xuyw-28371729
+15/11/05 22:37:24 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 2082 bytes result sent to driver
+15/11/05 22:37:24 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2082 bytes result sent to driver
+15/11/05 22:37:24 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 304 ms on localhost (1/2)
+15/11/05 22:37:24 INFO DAGScheduler: ResultStage 0 (count at q1.scala:89) finished in 0.328 s
+15/11/05 22:37:24 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 283 ms on localhost (2/2)
+15/11/05 22:37:24 INFO DAGScheduler: Job 0 finished: count at q1.scala:89, took 0.473057 s
+15/11/05 22:37:24 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+vertex: 5
+15/11/05 22:37:24 INFO SparkContext: Starting job: count at q1.scala:90
+15/11/05 22:37:24 INFO DAGScheduler: Got job 1 (count at q1.scala:90) with 4 output partitions
+15/11/05 22:37:24 INFO DAGScheduler: Final stage: ResultStage 1(count at q1.scala:90)
+15/11/05 22:37:24 INFO DAGScheduler: Parents of final stage: List()
+15/11/05 22:37:24 INFO DAGScheduler: Missing parents: List()
+15/11/05 22:37:24 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[4] at map at q1.scala:83), which has no missing parents
+15/11/05 22:37:24 INFO MemoryStore: ensureFreeSpace(3152) called with curMem=254869, maxMem=556038881
+15/11/05 22:37:24 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 3.1 KB, free 530.0 MB)
+15/11/05 22:37:24 INFO MemoryStore: ensureFreeSpace(1841) called with curMem=258021, maxMem=556038881
+15/11/05 22:37:24 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 1841.0 B, free 530.0 MB)
+15/11/05 22:37:24 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:47032 (size: 1841.0 B, free: 530.3 MB)
+15/11/05 22:37:24 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:24 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 1 (MapPartitionsRDD[4] at map at q1.scala:83)
+15/11/05 22:37:24 INFO TaskSchedulerImpl: Adding task set 1.0 with 4 tasks
+15/11/05 22:37:24 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, localhost, PROCESS_LOCAL, 2573 bytes)
+15/11/05 22:37:24 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, localhost, PROCESS_LOCAL, 2817 bytes)
+15/11/05 22:37:24 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 4, localhost, PROCESS_LOCAL, 2817 bytes)
+15/11/05 22:37:24 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 5, localhost, PROCESS_LOCAL, 2523 bytes)
+15/11/05 22:37:24 INFO Executor: Running task 1.0 in stage 1.0 (TID 3)
+15/11/05 22:37:24 INFO Executor: Running task 0.0 in stage 1.0 (TID 2)
+15/11/05 22:37:24 INFO Executor: Running task 2.0 in stage 1.0 (TID 4)
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+15/11/05 22:37:24 INFO Executor: Running task 3.0 in stage 1.0 (TID 5)
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/ihpw-1002707688
+this is:file:/users/zhaoyu/random/issr687954527
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+15/11/05 22:37:24 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/ihpw-646907992
+this is:file:/users/zhaoyu/random/issr1579319931
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ihpw1824442258
+((-1002707688,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(1824442258,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(ze, ku, cb, le, vh, ol, lp, ae, nx, wi, kp, hl, ba, xj, mf, oy, fw, wx, xd, eu, bn, vv, iw, zx, uk, tp, co, ot, ys, kr, ua, gf, ky, cx, sx, ww, yw, cs, eb, yj, gl, ke, wj, sr, us, el, ef, su, zk, fx, gr, wy, os, bj, ud, sf, jz, lw, tg, xo, rb, rt, ck, gv, jy, tv, ko, aw, vf, et, af, lj, xh, wq, oz, ps, px, yx, zj, sy, bx, eg, nm, fh, jv, yu, dq, ao, ce, ex, bu, ac, wo, mh, bp, wu, il, gu, he, dj, yb, un, iy, rj, wa, hx, df, vt, xl, yf, tw, mm, ad, py, mz, bb, sp, tm, zn, lt, ly, bk, yc, km, yv, mn, nv, pl, rg)
+this is:file:/users/zhaoyu/random/issr927916470
+this is:file:/users/zhaoyu/random/issr-567434099
+((687954527,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(927916470,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(jo, pm, st, ya, kp, uv, rr, rs, ta, ez, zq, ug, bf, zm, yh, xx, zi, jk, si, nu, qv, pa, br, ww, vb, yw, gl, xk, qd, ca, cz, wn, jy, wb, im, fu, px, xy, sn, mp, ah, fp, sy, hw, eg, yu, rp, ht, ml, go, gm, kf, ll, lg, ag, yb, wa, ld, zg, ry, sw, cc, fz, qu, yq, hp, aa, nj, cp, hd, mv, bo, nw, vg, ym, hh, jl, hu, zw, rg, dd)
+this is:file:/users/zhaoyu/random/ihpw1946159336
+((-646907992,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-567434099,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(kp, ww, yw, gl, jy, px, sy, eg, yu, yb, wa, rg)
+((1579319931,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(1946159336,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(kp, ww, yw, gl, jy, px, sy, eg, yu, yb, wa, rg)
+this is:file:/users/zhaoyu/random/fbxo1922360866
+((-1002707688,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(1922360866,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(le, ol, wi, mf, oy, ys, sx, fx, wy, bj, rb, lj, oz, eg, yu, ce, bp, gu, dj, yb, un, rj, yf, tw, py, tm, zn, pl)
+this is:file:/users/zhaoyu/random/fbxo-1021330151
+((1579319931,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(-1021330151,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(bf, yh, jk, si, br, vb, im, eg, yu, gm, ag, yb, zg, ry, cc, jl)
+this is:file:/users/zhaoyu/random/xuyw-1486516129
+((-1002707688,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-1486516129,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(ku, cb, vh, lp, kp, hl, xj, xd, bn, uk, tp, cx, sx, yw, eb, gl, us, el, tg, nm, ex, il, py, mz, sp, mn, nv)
+this is:file:/users/zhaoyu/random/ynrg1746531094
+this is:file:/users/zhaoyu/random/ynrg359195871
+this is:file:/users/zhaoyu/random/xuyw-402553012
+((-646907992,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(1746531094,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+((687954527,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(359195871,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(wx, ys, bj, jz, lw, aw, lj, ao, ce, un, vt, xl, mm, ad)
+hasCommonSet(jo, bf, vb, cz, ht, gm, sw, cp, hu)
+((1579319931,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(-402553012,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(kp, bf, zm, zi, jk, br, yw, gl, im, sn, mp, fp, ml, ld, ry, sw, hd, hh)
+this is:file:/users/zhaoyu/random/fbxo703219715
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ynrg1265863019
+this is:file:/users/zhaoyu/random/fbxo-927099518
+this is:file:/users/zhaoyu/random/ynrg-671514381
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/ihpw-1820517271
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+((703219715,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(-1820517271,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+hasCommonSet(le, ol, wi, mf, oy, ys, sx, fx, wy, bj, rb, lj, oz, eg, yu, ce, bp, gu, dj, yb, un, rj, yf, tw, py, tm, zn, pl)
+this is:file:/users/zhaoyu/random/fbxo865571900
+this is:file:/users/zhaoyu/random/issr996433316
+this is:file:/users/zhaoyu/random/issr-1005443080
+this is:file:/users/zhaoyu/random/ihpw-147948710
+((1265863019,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-1005443080,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(jo, bf, vb, cz, ht, gm, sw, cp, hu)
+((703219715,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(865571900,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(xn, le, ct, ol, jt, wi, ip, mf, oy, ty, xt, vl, ev, vw, bf, kl, rn, qr, yh, jc, lz, qc, ed, ys, wc, jk, si, if, ga, gk, br, sx, vb, pt, jx, pw, cd, re, cu, fc, nh, fx, wy, tz, oi, bj, rq, uh, tl, nl, rb, cn, ue, sj, tk, ut, xc, im, de, lj, ma, oz, ch, fd, rf, eg, vd, yu, kw, xp, gm, ce, nz, ia, ra, bd, bz, sg, po, bp, kj, ag, by, en, gu, dj, gd, bl, yb, un, rj, gz, xz, dr, az, xb, zg, oq, ry, ci, yf, tw, au, jf, cc, pu, cw, ok, qz, ub, hz, py, qn, xi, uy, kq, fi, tm, zn, iv, no, ow, ou, md, rc, eq, of, qf, fa, xa, er, oa, jl, pl, op, pg)
+((-671514381,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-147948710,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(wx, ys, bj, jz, lw, aw, lj, ao, ce, un, vt, xl, mm, ad)
+((-927099518,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(996433316,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(bf, yh, jk, si, br, vb, im, eg, yu, gm, ag, yb, zg, ry, cc, jl)
+this is:file:/users/zhaoyu/random/ynrg604844163
+((-927099518,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(604844163,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+this is:file:/users/zhaoyu/random/ynrg-1708677918
+hasCommonSet(xt, ev, vw, bf, ed, ys, wc, vb, oi, bj, cn, lj, gm, ce, ia, ra, un, dr, hz, fa)
+((1265863019,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-1708677918,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(mb, jo, iz, ka, ar, fr, xt, ev, ng, vw, bf, wx, hv, xe, av, ed, ys, fj, wc, nr, tj, vb, do, bq, lf, ny, cz, db, gy, oi, bj, vi, jz, ab, lw, yo, ap, bg, cn, qw, or, rx, aw, vp, lj, zy, gq, td, je, wk, vs, ao, uc, ht, qt, pk, rk, gm, ce, ia, ra, pr, qo, ve, xv, sm, un, dr, zz, ea, qi, vt, xl, mm, ad, xm, ie, sw, cf, hz, mi, dx, hk, cp, ro, we, gt, ii, fa, aj, hu, nt)
+15/11/05 22:37:25 INFO Executor: Finished task 3.0 in stage 1.0 (TID 5). 2082 bytes result sent to driver
+this is:file:/users/zhaoyu/random/xuyw1208876662
+this is:file:/users/zhaoyu/random/fbxo-542736559
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 5) in 325 ms on localhost (1/4)
+((-671514381,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-542736559,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(xt, ev, vw, bf, ed, ys, wc, vb, oi, bj, cn, lj, gm, ce, ia, ra, un, dr, hz, fa)
+((703219715,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(1208876662,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(jt, bf, jk, br, sx, jx, rq, im, kw, ia, by, ry, py)
+this is:file:/users/zhaoyu/random/xuyw-1572188592
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/xuyw-1045302593
+this is:file:/users/zhaoyu/random/xuyw1470134826
+this is:file:/users/zhaoyu/random/issr-142494923915/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+
+((-671514381,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(1470134826,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(ar, bf, xe, lf, ab, yo, qt, pk, ia, ve, sw, cf, aj)
+15/11/05 22:37:25 INFO Executor: Finished task 2.0 in stage 1.0 (TID 4). 2082 bytes result sent to driver
+((-1572188592,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-1424949239,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(kp, bf, zm, zi, jk, br, yw, gl, im, sn, mp, fp, ml, ld, ry, sw, hd, hh)
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 4) in 387 ms on localhost (2/4)
+this is:file:/users/zhaoyu/random/ihpw1304313475
+((-1045302593,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(1304313475,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(ku, cb, vh, lp, kp, hl, xj, xd, bn, uk, tp, cx, sx, yw, eb, gl, us, el, tg, nm, ex, il, py, mz, sp, mn, nv)
+this is:file:/users/zhaoyu/random/ynrg2042031272
+((-1572188592,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(2042031272,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(ar, bf, xe, lf, ab, yo, qt, pk, ia, ve, sw, cf, aj)
+15/11/05 22:37:25 INFO Executor: Finished task 1.0 in stage 1.0 (TID 3). 2082 bytes result sent to driver
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 419 ms on localhost (3/4)
+this is:file:/users/zhaoyu/random/fbxo-810595301
+((-1045302593,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-810595301,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(jt, bf, jk, br, sx, jx, rq, im, kw, ia, by, ry, py)
+this is:file:/users/zhaoyu/random/xuyw-417504380
+((-1045302593,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-417504380,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(yz, wm, se, ku, cb, tf, yp, vh, nc, bs, lp, mw, jt, du, kz, kp, hl, in, xj, ar, is, ei, zt, bf, xd, zm, xe, bn, mj, oe, ib, gw, uk, tp, zi, dc, jk, br, cx, sx, hg, yw, ov, mq, jx, nd, eb, lf, gl, ye, us, el, vx, fm, ju, rq, la, ab, tg, qp, yo, pe, im, xr, sn, ig, mp, fp, jn, iu, nm, qj, ln, ru, tc, dl, pz, kw, ml, qt, pk, kc, ia, ex, fl, tr, cq, yn, ve, by, il, cm, gc, es, ld, rl, ry, wp, ax, og, qx, ih, hi, te, bv, io, sw, jr, be, cf, py, ja, mz, hd, sp, ff, mu, dg, hh, ws, ik, mn, jj, aj, nv, yg)
+15/11/05 22:37:25 INFO Executor: Finished task 0.0 in stage 1.0 (TID 2). 2082 bytes result sent to driver
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 473 ms on localhost (4/4)
+15/11/05 22:37:25 INFO DAGScheduler: ResultStage 1 (count at q1.scala:90) finished in 0.475 s
+15/11/05 22:37:25 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+15/11/05 22:37:25 INFO DAGScheduler: Job 1 finished: count at q1.scala:90, took 0.504907 s
+edges: 25
+15/11/05 22:37:25 INFO SparkContext: Starting job: reduce at VertexRDDImpl.scala:90
+15/11/05 22:37:25 INFO DAGScheduler: Registering RDD 9 (mapPartitions at VertexRDD.scala:358)
+15/11/05 22:37:25 INFO DAGScheduler: Registering RDD 1 (map at q1.scala:82)
+15/11/05 22:37:25 INFO DAGScheduler: Got job 2 (reduce at VertexRDDImpl.scala:90) with 2 output partitions
+15/11/05 22:37:25 INFO DAGScheduler: Final stage: ResultStage 4(reduce at VertexRDDImpl.scala:90)
+15/11/05 22:37:25 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2, ShuffleMapStage 3)
+15/11/05 22:37:25 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 2, ShuffleMapStage 3)
+15/11/05 22:37:25 INFO DAGScheduler: Submitting ShuffleMapStage 2 (VertexRDD.createRoutingTables - vid2pid (aggregation) MapPartitionsRDD[9] at mapPartitions at VertexRDD.scala:358), which has no missing parents
+15/11/05 22:37:25 INFO MemoryStore: ensureFreeSpace(4176) called with curMem=259862, maxMem=556038881
+15/11/05 22:37:25 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 4.1 KB, free 530.0 MB)
+15/11/05 22:37:25 INFO MemoryStore: ensureFreeSpace(2253) called with curMem=264038, maxMem=556038881
+15/11/05 22:37:25 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.2 KB, free 530.0 MB)
+15/11/05 22:37:25 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:47032 (size: 2.2 KB, free: 530.3 MB)
+15/11/05 22:37:25 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:25 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 2 (VertexRDD.createRoutingTables - vid2pid (aggregation) MapPartitionsRDD[9] at mapPartitions at VertexRDD.scala:358)
+15/11/05 22:37:25 INFO TaskSchedulerImpl: Adding task set 2.0 with 4 tasks
+15/11/05 22:37:25 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[1] at map at q1.scala:82), which has no missing parents
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 6, localhost, PROCESS_LOCAL, 2562 bytes)
+15/11/05 22:37:25 INFO MemoryStore: ensureFreeSpace(2920) called with curMem=266291, maxMem=556038881
+15/11/05 22:37:25 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 2.9 KB, free 530.0 MB)
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 7, localhost, PROCESS_LOCAL, 2806 bytes)
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 8, localhost, PROCESS_LOCAL, 2806 bytes)
+15/11/05 22:37:25 INFO MemoryStore: ensureFreeSpace(1732) called with curMem=269211, maxMem=556038881
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 3.0 in stage 2.0 (TID 9, localhost, PROCESS_LOCAL, 2512 bytes)
+15/11/05 22:37:25 INFO Executor: Running task 0.0 in stage 2.0 (TID 6)
+15/11/05 22:37:25 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 1732.0 B, free 530.0 MB)
+15/11/05 22:37:25 INFO Executor: Running task 3.0 in stage 2.0 (TID 9)
+15/11/05 22:37:25 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on localhost:47032 (size: 1732.0 B, free: 530.3 MB)
+15/11/05 22:37:25 INFO Executor: Running task 2.0 in stage 2.0 (TID 8)
+15/11/05 22:37:25 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:25 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[1] at map at q1.scala:82)
+15/11/05 22:37:25 INFO TaskSchedulerImpl: Adding task set 3.0 with 2 tasks
+15/11/05 22:37:25 INFO Executor: Running task 1.0 in stage 2.0 (TID 7)
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/issr1651215160
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/issr-978851371
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ihpw-975934656
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/ihpw-972757781
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/issr2052087989
+((1651215160,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(2052087989,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(jo, pm, st, ya, kp, uv, rr, rs, ta, ez, zq, ug, bf, zm, yh, xx, zi, jk, si, nu, qv, pa, br, ww, vb, yw, gl, xk, qd, ca, cz, wn, jy, wb, im, fu, px, xy, sn, mp, ah, fp, sy, hw, eg, yu, rp, ht, ml, go, gm, kf, ll, lg, ag, yb, wa, ld, zg, ry, sw, cc, fz, qu, yq, hp, aa, nj, cp, hd, mv, bo, nw, vg, ym, hh, jl, hu, zw, rg, dd)
+this is:file:/users/zhaoyu/random/ihpw-1744392735
+((-978851371,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(-1744392735,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(kp, ww, yw, gl, jy, px, sy, eg, yu, yb, wa, rg)
+this is:file:/users/zhaoyu/random/issr1713815502
+((-975934656,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(1713815502,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(kp, ww, yw, gl, jy, px, sy, eg, yu, yb, wa, rg)
+this is:file:/users/zhaoyu/random/ynrg197483587
+((1651215160,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(197483587,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(jo, bf, vb, cz, ht, gm, sw, cp, hu)
+this is:file:/users/zhaoyu/random/ihpw752190993
+((-972757781,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(752190993,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(ze, ku, cb, le, vh, ol, lp, ae, nx, wi, kp, hl, ba, xj, mf, oy, fw, wx, xd, eu, bn, vv, iw, zx, uk, tp, co, ot, ys, kr, ua, gf, ky, cx, sx, ww, yw, cs, eb, yj, gl, ke, wj, sr, us, el, ef, su, zk, fx, gr, wy, os, bj, ud, sf, jz, lw, tg, xo, rb, rt, ck, gv, jy, tv, ko, aw, vf, et, af, lj, xh, wq, oz, ps, px, yx, zj, sy, bx, eg, nm, fh, jv, yu, dq, ao, ce, ex, bu, ac, wo, mh, bp, wu, il, gu, he, dj, yb, un, iy, rj, wa, hx, df, vt, xl, yf, tw, mm, ad, py, mz, bb, sp, tm, zn, lt, ly, bk, yc, km, yv, mn, nv, pl, rg)
+15/11/05 22:37:25 INFO ContextCleaner: Cleaned accumulator 2
+15/11/05 22:37:25 INFO BlockManagerInfo: Removed broadcast_1_piece0 on localhost:47032 in memory (size: 1506.0 B, free: 530.3 MB)
+15/11/05 22:37:25 INFO ContextCleaner: Cleaned accumulator 1
+this is:file:/users/zhaoyu/random/fbxo852665284
+this is:file:/users/zhaoyu/random/ynrg-1520927494
+((-975934656,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-1520927494,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(wx, ys, bj, jz, lw, aw, lj, ao, ce, un, vt, xl, mm, ad)
+((-978851371,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(852665284,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(bf, yh, jk, si, br, vb, im, eg, yu, gm, ag, yb, zg, ry, cc, jl)
+this is:file:/users/zhaoyu/random/ynrg2113632132
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/fbxo1538122073
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/fbxo-360407481
+((-972757781,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-360407481,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+this is:file:/users/zhaoyu/random/issr-1036357658
+((1538122073,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(-1036357658,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(bf, yh, jk, si, br, vb, im, eg, yu, gm, ag, yb, zg, ry, cc, jl)
+hasCommonSet(le, ol, wi, mf, oy, ys, sx, fx, wy, bj, rb, lj, oz, eg, yu, ce, bp, gu, dj, yb, un, rj, yf, tw, py, tm, zn, pl)
+this is:file:/users/zhaoyu/random/issr-933722832
+((2113632132,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-933722832,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(jo, bf, vb, cz, ht, gm, sw, cp, hu)
+this is:file:/users/zhaoyu/random/xuyw-1892670383
+((-978851371,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(-1892670383,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(kp, bf, zm, zi, jk, br, yw, gl, im, sn, mp, fp, ml, ld, ry, sw, hd, hh)
+this is:file:/users/zhaoyu/random/ynrg274183240
+((1538122073,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(274183240,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(xt, ev, vw, bf, ed, ys, wc, vb, oi, bj, cn, lj, gm, ce, ia, ra, un, dr, hz, fa)
+this is:file:/users/zhaoyu/random/xuyw341606196
+((-972757781,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(341606196,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(ku, cb, vh, lp, kp, hl, xj, xd, bn, uk, tp, cx, sx, yw, eb, gl, us, el, tg, nm, ex, il, py, mz, sp, mn, nv)
+this is:file:/users/zhaoyu/random/ynrg-323015387
+((2113632132,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-323015387,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(mb, jo, iz, ka, ar, fr, xt, ev, ng, vw, bf, wx, hv, xe, av, ed, ys, fj, wc, nr, tj, vb, do, bq, lf, ny, cz, db, gy, oi, bj, vi, jz, ab, lw, yo, ap, bg, cn, qw, or, rx, aw, vp, lj, zy, gq, td, je, wk, vs, ao, uc, ht, qt, pk, rk, gm, ce, ia, ra, pr, qo, ve, xv, sm, un, dr, zz, ea, qi, vt, xl, mm, ad, xm, ie, sw, cf, hz, mi, dx, hk, cp, ro, we, gt, ii, fa, aj, hu, nt)
+this is:file:/users/zhaoyu/random/ynrg128726682
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/fbxo-649314231
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/xuyw-874384665
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/issr-355990018
+this is:file:/users/zhaoyu/random/ihpw-1394078554
+((-874384665,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-355990018,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(kp, bf, zm, zi, jk, br, yw, gl, im, sn, mp, fp, ml, ld, ry, sw, hd, hh)
+((-649314231,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(-1394078554,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(le, ol, wi, mf, oy, ys, sx, fx, wy, bj, rb, lj, oz, eg, yu, ce, bp, gu, dj, yb, un, rj, yf, tw, py, tm, zn, pl)
+this is:file:/users/zhaoyu/random/ihpw758513563
+((128726682,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(758513563,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(wx, ys, bj, jz, lw, aw, lj, ao, ce, un, vt, xl, mm, ad)
+this is:file:/users/zhaoyu/random/ynrg-887835092
+((-874384665,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-887835092,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(ar, bf, xe, lf, ab, yo, qt, pk, ia, ve, sw, cf, aj)
+this is:file:/users/zhaoyu/random/fbxo-42327555
+((-649314231,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(-42327555,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(xn, le, ct, ol, jt, wi, ip, mf, oy, ty, xt, vl, ev, vw, bf, kl, rn, qr, yh, jc, lz, qc, ed, ys, wc, jk, si, if, ga, gk, br, sx, vb, pt, jx, pw, cd, re, cu, fc, nh, fx, wy, tz, oi, bj, rq, uh, tl, nl, rb, cn, ue, sj, tk, ut, xc, im, de, lj, ma, oz, ch, fd, rf, eg, vd, yu, kw, xp, gm, ce, nz, ia, ra, bd, bz, sg, po, bp, kj, ag, by, en, gu, dj, gd, bl, yb, un, rj, gz, xz, dr, az, xb, zg, oq, ry, ci, yf, tw, au, jf, cc, pu, cw, ok, qz, ub, hz, py, qn, xi, uy, kq, fi, tm, zn, iv, no, ow, ou, md, rc, eq, of, qf, fa, xa, er, oa, jl, pl, op, pg)
+this is:file:/users/zhaoyu/random/fbxo-1459055148
+((128726682,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-1459055148,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(xt, ev, vw, bf, ed, ys, wc, vb, oi, bj, cn, lj, gm, ce, ia, ra, un, dr, hz, fa)
+this is:file:/users/zhaoyu/random/xuyw-691939763
+((-649314231,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(-691939763,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(jt, bf, jk, br, sx, jx, rq, im, kw, ia, by, ry, py)
+15/11/05 22:37:25 INFO Executor: Finished task 3.0 in stage 2.0 (TID 9). 2254 bytes result sent to driver
+15/11/05 22:37:25 INFO Executor: Finished task 1.0 in stage 2.0 (TID 7). 2254 bytes result sent to driver
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 10, localhost, PROCESS_LOCAL, 2358 bytes)
+15/11/05 22:37:25 INFO Executor: Running task 0.0 in stage 3.0 (TID 10)
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 11, localhost, PROCESS_LOCAL, 2308 bytes)
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 3.0 in stage 2.0 (TID 9) in 343 ms on localhost (1/4)
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 7) in 347 ms on localhost (2/4)
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+15/11/05 22:37:25 INFO Executor: Running task 1.0 in stage 3.0 (TID 11)
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/xuyw1817265762
+((128726682,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(1817265762,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(ar, bf, xe, lf, ab, yo, qt, pk, ia, ve, sw, cf, aj)
+this is:file:/users/zhaoyu/random/xuyw-1870553685
+15/11/05 22:37:25 INFO Executor: Finished task 2.0 in stage 2.0 (TID 8). 2254 bytes result sent to driver
+15/11/05 22:37:25 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ihpw-2024039883
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 8) in 368 ms on localhost (3/4)
+this is:file:/users/zhaoyu/random/issr51943535
+this is:file:/users/zhaoyu/random/ihpw1366844095
+((-1870553685,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(1366844095,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(ku, cb, vh, lp, kp, hl, xj, xd, bn, uk, tp, cx, sx, yw, eb, gl, us, el, tg, nm, ex, il, py, mz, sp, mn, nv)
+this is:file:/users/zhaoyu/random/fbxo1574166640
+this is:file:/users/zhaoyu/random/ynrg1845228925
+15/11/05 22:37:25 INFO Executor: Finished task 1.0 in stage 3.0 (TID 11). 2254 bytes result sent to driver
+this is:file:/users/zhaoyu/random/fbxo-749488221
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 11) in 54 ms on localhost (1/2)
+((-1870553685,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-749488221,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(jt, bf, jk, br, sx, jx, rq, im, kw, ia, by, ry, py)
+this is:file:/users/zhaoyu/random/xuyw678611999
+this is:file:/users/zhaoyu/random/xuyw-1834114950
+((-1870553685,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-1834114950,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+15/11/05 22:37:25 INFO Executor: Finished task 0.0 in stage 3.0 (TID 10). 2254 bytes result sent to driver
+hasCommonSet(yz, wm, se, ku, cb, tf, yp, vh, nc, bs, lp, mw, jt, du, kz, kp, hl, in, xj, ar, is, ei, zt, bf, xd, zm, xe, bn, mj, oe, ib, gw, uk, tp, zi, dc, jk, br, cx, sx, hg, yw, ov, mq, jx, nd, eb, lf, gl, ye, us, el, vx, fm, ju, rq, la, ab, tg, qp, yo, pe, im, xr, sn, ig, mp, fp, jn, iu, nm, qj, ln, ru, tc, dl, pz, kw, ml, qt, pk, kc, ia, ex, fl, tr, cq, yn, ve, by, il, cm, gc, es, ld, rl, ry, wp, ax, og, qx, ih, hi, te, bv, io, sw, jr, be, cf, py, ja, mz, hd, sp, ff, mu, dg, hh, ws, ik, mn, jj, aj, nv, yg)
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 10) in 74 ms on localhost (2/2)
+15/11/05 22:37:25 INFO DAGScheduler: ShuffleMapStage 3 (map at q1.scala:82) finished in 0.405 s
+15/11/05 22:37:25 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+15/11/05 22:37:25 INFO DAGScheduler: looking for newly runnable stages
+15/11/05 22:37:25 INFO DAGScheduler: running: Set(ShuffleMapStage 2)
+15/11/05 22:37:25 INFO Executor: Finished task 0.0 in stage 2.0 (TID 6). 2254 bytes result sent to driver
+15/11/05 22:37:25 INFO DAGScheduler: waiting: Set(ResultStage 4)
+15/11/05 22:37:25 INFO DAGScheduler: failed: Set()
+15/11/05 22:37:25 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 6) in 422 ms on localhost (4/4)
+15/11/05 22:37:25 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+15/11/05 22:37:25 INFO DAGScheduler: Missing parents for ResultStage 4: List(ShuffleMapStage 2)
+15/11/05 22:37:25 INFO DAGScheduler: ShuffleMapStage 2 (mapPartitions at VertexRDD.scala:358) finished in 0.426 s
+15/11/05 22:37:25 INFO DAGScheduler: looking for newly runnable stages
+15/11/05 22:37:25 INFO DAGScheduler: running: Set()
+15/11/05 22:37:25 INFO DAGScheduler: waiting: Set(ResultStage 4)
+15/11/05 22:37:25 INFO DAGScheduler: failed: Set()
+15/11/05 22:37:25 INFO DAGScheduler: Missing parents for ResultStage 4: List()
+15/11/05 22:37:25 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[17] at map at VertexRDDImpl.scala:90), which is now runnable
+15/11/05 22:37:25 INFO MemoryStore: ensureFreeSpace(3984) called with curMem=261988, maxMem=556038881
+15/11/05 22:37:25 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 3.9 KB, free 530.0 MB)
+15/11/05 22:37:25 INFO MemoryStore: ensureFreeSpace(2188) called with curMem=265972, maxMem=556038881
+15/11/05 22:37:25 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.1 KB, free 530.0 MB)
+15/11/05 22:37:25 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on localhost:47032 (size: 2.1 KB, free: 530.3 MB)
+15/11/05 22:37:25 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:25 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 4 (MapPartitionsRDD[17] at map at VertexRDDImpl.scala:90)
+15/11/05 22:37:25 INFO TaskSchedulerImpl: Adding task set 4.0 with 2 tasks
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 12, localhost, PROCESS_LOCAL, 2151 bytes)
+15/11/05 22:37:25 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 13, localhost, PROCESS_LOCAL, 2151 bytes)
+15/11/05 22:37:25 INFO Executor: Running task 0.0 in stage 4.0 (TID 12)
+15/11/05 22:37:25 INFO Executor: Running task 1.0 in stage 4.0 (TID 13)
+15/11/05 22:37:25 INFO CacheManager: Partition rdd_12_1 not found, computing it
+15/11/05 22:37:25 INFO CacheManager: Partition rdd_12_0 not found, computing it
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 5 ms
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 5 ms
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks out of 4 blocks
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks out of 4 blocks
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+15/11/05 22:37:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(23424) called with curMem=268160, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block rdd_12_0 stored as values in memory (estimated size 22.9 KB, free 530.0 MB)
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(26216) called with curMem=291584, maxMem=556038881
+15/11/05 22:37:26 INFO BlockManagerInfo: Added rdd_12_0 in memory on localhost:47032 (size: 22.9 KB, free: 530.2 MB)
+15/11/05 22:37:26 INFO MemoryStore: Block rdd_12_1 stored as values in memory (estimated size 25.6 KB, free 530.0 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added rdd_12_1 in memory on localhost:47032 (size: 25.6 KB, free: 530.2 MB)
+15/11/05 22:37:26 INFO Executor: Finished task 0.0 in stage 4.0 (TID 12). 1862 bytes result sent to driver
+15/11/05 22:37:26 INFO Executor: Finished task 1.0 in stage 4.0 (TID 13). 1862 bytes result sent to driver
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 12) in 97 ms on localhost (1/2)
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 13) in 93 ms on localhost (2/2)
+15/11/05 22:37:26 INFO DAGScheduler: ResultStage 4 (reduce at VertexRDDImpl.scala:90) finished in 0.098 s
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+15/11/05 22:37:26 INFO DAGScheduler: Job 2 finished: reduce at VertexRDDImpl.scala:90, took 0.592318 s
+graph vertex:40
+15/11/05 22:37:26 INFO SparkContext: Starting job: reduce at EdgeRDDImpl.scala:89
+15/11/05 22:37:26 INFO DAGScheduler: Got job 3 (reduce at EdgeRDDImpl.scala:89) with 4 output partitions
+15/11/05 22:37:26 INFO DAGScheduler: Final stage: ResultStage 5(reduce at EdgeRDDImpl.scala:89)
+15/11/05 22:37:26 INFO DAGScheduler: Parents of final stage: List()
+15/11/05 22:37:26 INFO DAGScheduler: Missing parents: List()
+15/11/05 22:37:26 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[18] at map at EdgeRDDImpl.scala:89), which has no missing parents
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(4216) called with curMem=317800, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 4.1 KB, free 530.0 MB)
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(2251) called with curMem=322016, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 2.2 KB, free 530.0 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on localhost:47032 (size: 2.2 KB, free: 530.2 MB)
+15/11/05 22:37:26 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:26 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 5 (MapPartitionsRDD[18] at map at EdgeRDDImpl.scala:89)
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Adding task set 5.0 with 4 tasks
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 14, localhost, PROCESS_LOCAL, 2573 bytes)
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 15, localhost, PROCESS_LOCAL, 2817 bytes)
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 2.0 in stage 5.0 (TID 16, localhost, PROCESS_LOCAL, 2817 bytes)
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 3.0 in stage 5.0 (TID 17, localhost, PROCESS_LOCAL, 2523 bytes)
+15/11/05 22:37:26 INFO Executor: Running task 0.0 in stage 5.0 (TID 14)
+15/11/05 22:37:26 INFO Executor: Running task 1.0 in stage 5.0 (TID 15)
+15/11/05 22:37:26 INFO Executor: Running task 3.0 in stage 5.0 (TID 17)
+15/11/05 22:37:26 INFO Executor: Running task 2.0 in stage 5.0 (TID 16)
+15/11/05 22:37:26 INFO CacheManager: Partition rdd_15_3 not found, computing it
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+15/11/05 22:37:26 INFO CacheManager: Partition rdd_15_2 not found, computing it
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+15/11/05 22:37:26 INFO CacheManager: Partition rdd_15_1 not found, computing it
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+15/11/05 22:37:26 INFO CacheManager: Partition rdd_15_0 not found, computing it
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/issr-1460435640
+this is:file:/users/zhaoyu/random/issr409463343
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ihpw262465660
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ihpw994862849
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/issr645615296
+((-1460435640,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(645615296,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+this is:file:/users/zhaoyu/random/ihpw1005429284
+((409463343,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(1005429284,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(jo, pm, st, ya, kp, uv, rr, rs, ta, ez, zq, ug, bf, zm, yh, xx, zi, jk, si, nu, qv, pa, br, ww, vb, yw, gl, xk, qd, ca, cz, wn, jy, wb, im, fu, px, xy, sn, mp, ah, fp, sy, hw, eg, yu, rp, ht, ml, go, gm, kf, ll, lg, ag, yb, wa, ld, zg, ry, sw, cc, fz, qu, yq, hp, aa, nj, cp, hd, mv, bo, nw, vg, ym, hh, jl, hu, zw, rg, dd)
+hasCommonSet(kp, ww, yw, gl, jy, px, sy, eg, yu, yb, wa, rg)
+this is:file:/users/zhaoyu/random/fbxo-1057052716
+this is:file:/users/zhaoyu/random/ynrg-358957597
+((409463343,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(-1057052716,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+((-1460435640,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(-358957597,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(jo, bf, vb, cz, ht, gm, sw, cp, hu)
+this is:file:/users/zhaoyu/random/issr1366032727
+this is:file:/users/zhaoyu/random/ihpw-1592356676
+((994862849,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(1366032727,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(kp, ww, yw, gl, jy, px, sy, eg, yu, yb, wa, rg)
+((262465660,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-1592356676,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(bf, yh, jk, si, br, vb, im, eg, yu, gm, ag, yb, zg, ry, cc, jl)
+hasCommonSet(ze, ku, cb, le, vh, ol, lp, ae, nx, wi, kp, hl, ba, xj, mf, oy, fw, wx, xd, eu, bn, vv, iw, zx, uk, tp, co, ot, ys, kr, ua, gf, ky, cx, sx, ww, yw, cs, eb, yj, gl, ke, wj, sr, us, el, ef, su, zk, fx, gr, wy, os, bj, ud, sf, jz, lw, tg, xo, rb, rt, ck, gv, jy, tv, ko, aw, vf, et, af, lj, xh, wq, oz, ps, px, yx, zj, sy, bx, eg, nm, fh, jv, yu, dq, ao, ce, ex, bu, ac, wo, mh, bp, wu, il, gu, he, dj, yb, un, iy, rj, wa, hx, df, vt, xl, yf, tw, mm, ad, py, mz, bb, sp, tm, zn, lt, ly, bk, yc, km, yv, mn, nv, pl, rg)
+this is:file:/users/zhaoyu/random/ynrg576225189
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/ynrg-2104227044
+((994862849,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-2104227044,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(wx, ys, bj, jz, lw, aw, lj, ao, ce, un, vt, xl, mm, ad)
+this is:file:/users/zhaoyu/random/xuyw1979260447
+((409463343,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)),(1979260447,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(kp, bf, zm, zi, jk, br, yw, gl, im, sn, mp, fp, ml, ld, ry, sw, hd, hh)
+this is:file:/users/zhaoyu/random/fbxo-723835032
+((262465660,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-723835032,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(le, ol, wi, mf, oy, ys, sx, fx, wy, bj, rb, lj, oz, eg, yu, ce, bp, gu, dj, yb, un, rj, yf, tw, py, tm, zn, pl)
+this is:file:/users/zhaoyu/random/fbxo-1005953858
+this is:file:/users/zhaoyu/random/issr512238234
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+
+hasCommonSet(jo, bf, vb, cz, ht, gm, sw, cp, hu)
+this is:file:/users/zhaoyu/random/ynrg1747638920
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/xuyw-1637376037
+((262465660,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)),(-1637376037,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(ku, cb, vh, lp, kp, hl, xj, xd, bn, uk, tp, cx, sx, yw, eb, gl, us, el, tg, nm, ex, il, py, mz, sp, mn, nv)
+this is:file:/users/zhaoyu/random/ynrg-382763267
+((576225189,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-382763267,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+this is:file:/users/zhaoyu/random/issr-114746804
+hasCommonSet(mb, jo, iz, ka, ar, fr, xt, ev, ng, vw, bf, wx, hv, xe, av, ed, ys, fj, wc, nr, tj, vb, do, bq, lf, ny, cz, db, gy, oi, bj, vi, jz, ab, lw, yo, ap, bg, cn, qw, or, rx, aw, vp, lj, zy, gq, td, je, wk, vs, ao, uc, ht, qt, pk, rk, gm, ce, ia, ra, pr, qo, ve, xv, sm, un, dr, zz, ea, qi, vt, xl, mm, ad, xm, ie, sw, cf, hz, mi, dx, hk, cp, ro, we, gt, ii, fa, aj, hu, nt)
+((-1005953858,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(-114746804,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(bf, yh, jk, si, br, vb, im, eg, yu, gm, ag, yb, zg, ry, cc, jl)
+this is:file:/users/zhaoyu/random/ihpw-1642517989
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(18656) called with curMem=324267, maxMem=556038881
+((1747638920,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-1642517989,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(wx, ys, bj, jz, lw, aw, lj, ao, ce, un, vt, xl, mm, ad)
+15/11/05 22:37:26 INFO MemoryStore: Block rdd_15_3 stored as values in memory (estimated size 18.2 KB, free 530.0 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added rdd_15_3 in memory on localhost:47032 (size: 18.2 KB, free: 530.2 MB)
+15/11/05 22:37:26 INFO Executor: Finished task 3.0 in stage 5.0 (TID 17). 2741 bytes result sent to driver
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 3.0 in stage 5.0 (TID 17) in 125 ms on localhost (1/4)
+this is:file:/users/zhaoyu/random/fbxo1474398975
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ynrg556648104
+((-1005953858,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(556648104,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(xt, ev, vw, bf, ed, ys, wc, vb, oi, bj, cn, lj, gm, ce, ia, ra, un, dr, hz, fa)
+this is:file:/users/zhaoyu/random/fbxo1280110935
+((1747638920,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(1280110935,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(xt, ev, vw, bf, ed, ys, wc, vb, oi, bj, cn, lj, gm, ce, ia, ra, un, dr, hz, fa)
+this is:file:/users/zhaoyu/random/ihpw1508019837
+((1474398975,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(1508019837,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(le, ol, wi, mf, oy, ys, sx, fx, wy, bj, rb, lj, oz, eg, yu, ce, bp, gu, dj, yb, un, rj, yf, tw, py, tm, zn, pl)
+this is:file:/users/zhaoyu/random/xuyw824150271
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/issr:0+475,/users/zhaoyu/random/ynrg:0+590
+this is:file:/users/zhaoyu/random/xuyw-400727378
+((1747638920,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)),(-400727378,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(ar, bf, xe, lf, ab, yo, qt, pk, ia, ve, sw, cf, aj)
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(10016) called with curMem=342923, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block rdd_15_2 stored as values in memory (estimated size 9.8 KB, free 529.9 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added rdd_15_2 in memory on localhost:47032 (size: 9.8 KB, free: 530.2 MB)
+this is:file:/users/zhaoyu/random/fbxo983159889
+15/11/05 22:37:26 INFO Executor: Finished task 2.0 in stage 5.0 (TID 16). 2741 bytes result sent to driver
+
+hasCommonSet(xn, le, ct, ol, jt, wi, ip, mf, oy, ty, xt, vl, ev, vw, bf, kl, rn, qr, yh, jc, lz, qc, ed, ys, wc, jk, si, if, ga, gk, br, sx, vb, pt, jx, pw, cd, re, cu, fc, nh, fx, wy, tz, oi, bj, rq, uh, tl, nl, rb, cn, ue, sj, tk, ut, xc, im, de, lj, ma, oz, ch, fd, rf, eg, vd, yu, kw, xp, gm, ce, nz, ia, ra, bd, bz, sg, po, bp, kj, ag, by, en, gu, dj, gd, bl, yb, un, rj, gz, xz, dr, az, xb, zg, oq, ry, ci, yf, tw, au, jf, cc, pu, cw, ok, qz, ub, hz, py, qn, xi, uy, kq, fi, tm, zn, iv, no, ow, ou, md, rc, eq, of, qf, fa, xa, er, oa, jl, pl, op, pg)
+this is:file:/users/zhaoyu/random/issr2113717721
+((824150271,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(2113717721,Set(ht, go, jl, st, ta, sw, ez, hw, rr, qd, sn, qv, fp, gl, ca, ya, nj, ym, vg, kp, ll, zi, xk, cp, hp, sy, jk, pm, yu, zq, eg, hd, fu, qu, ww, ah, zw, pa, mv, kf, mp, wb, nu, cc, xy, uv, wn, ry, hu, rg, rp, jy, rs, ug, zm, si, gm, yb, xx, zg, fz, br, ld, yw, nw, px, ag, yq, vb, cz, jo, ml, yh, lg, dd, wa, bo, aa, bf, im, hh)))
+hasCommonSet(kp, bf, zm, zi, jk, br, yw, gl, im, sn, mp, fp, ml, ld, ry, sw, hd, hh)
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 2.0 in stage 5.0 (TID 16) in 160 ms on localhost (2/4)
+this is:file:/users/zhaoyu/random/xuyw937738940
+((1474398975,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)),(937738940,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+this is:file:/users/zhaoyu/random/ynrg1225112337
+hasCommonSet(jt, bf, jk, br, sx, jx, rq, im, kw, ia, by, ry, py)
+((824150271,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(1225112337,Set(ad, hk, ht, rx, ro, uc, fj, av, tj, sw, ia, ny, xe, pk, do, ys, dx, wc, bq, vp, fa, oi, or, dr, ii, vs, ka, ao, lf, cp, un, mb, ng, je, wx, sm, xt, ar, jz, rk, gt, qo, qi, fr, ed, zz, ev, yo, db, cf, gq, hv, xm, ea, nr, mm, xv, bg, ab, wk, we, iz, aw, lw, bj, hu, vi, gy, ra, qw, pr, ie, zy, gm, nt, mi, cn, qt, ce, xl, vb, cz, jo, vt, ap, lj, aj, vw, td, bf, hz, ve)))
+hasCommonSet(ar, bf, xe, lf, ab, yo, qt, pk, ia, ve, sw, cf, aj)
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(10656) called with curMem=352939, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block rdd_15_1 stored as values in memory (estimated size 10.4 KB, free 529.9 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added rdd_15_1 in memory on localhost:47032 (size: 10.4 KB, free: 530.2 MB)
+15/11/05 22:37:26 INFO Executor: Finished task 1.0 in stage 5.0 (TID 15). 2741 bytes result sent to driver
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 15) in 186 ms on localhost (3/4)
+this is:file:/users/zhaoyu/random/xuyw-1381541190
+15/11/05 22:37:26 INFO WholeTextFileRDD: Input split: Paths:/users/zhaoyu/random/ihpw:0+800,/users/zhaoyu/random/fbxo:0+836,/users/zhaoyu/random/xuyw:0+797
+this is:file:/users/zhaoyu/random/ihpw1461753376
+((-1381541190,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(1461753376,Set(ad, vh, tp, gf, iy, tg, gr, he, ol, wi, gu, cs, mn, et, zx, bn, eb, df, ys, yj, gl, ky, ac, yv, kp, nv, uk, mh, xh, nm, mz, wu, wo, bk, bb, af, ao, un, wx, il, vv, rt, sy, sp, km, rb, jz, yu, oz, eg, cx, yx, nx, xj, py, co, ww, ot, zk, yf, ku, xd, ps, fx, mm, wq, ze, zn, tw, lt, bp, iw, us, ko, yc, ua, dq, vf, le, ae, jv, ud, lw, aw, bj, ba, su, kr, rg, hl, rj, jy, fw, sx, hx, sf, pl, el, eu, oy, gv, xo, yb, fh, sr, yw, zj, os, ef, dj, px, ce, ex, bu, xl, vt, ly, wy, lp, lj, wj, wa, ck, tm, cb, mf, tv, ke, bx)))
+hasCommonSet(ku, cb, vh, lp, kp, hl, xj, xd, bn, uk, tp, cx, sx, yw, eb, gl, us, el, tg, nm, ex, il, py, mz, sp, mn, nv)
+this is:file:/users/zhaoyu/random/fbxo-543343048
+((-1381541190,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(-543343048,Set(kq, jl, rf, ip, jc, ty, pw, eq, ia, ou, fd, ol, wi, gu, pt, xn, ys, of, rc, wc, xz, ut, bz, cd, fa, ub, au, en, dr, oi, un, kj, xb, ue, xt, vd, uh, gk, rb, sg, tl, qf, jk, jt, re, qr, if, fi, ed, yu, oz, rn, ev, sj, oq, pg, eg, rq, gz, no, py, qc, fc, xa, ok, yf, vl, de, uy, ow, kl, ci, fx, bd, md, az, lz, zn, tw, xp, bp, cu, by, nl, cc, le, ma, bj, ry, tz, rj, qn, tk, ra, ga, sx, gd, pl, si, oy, gm, yb, op, pu, zg, qz, br, xi, dj, cn, oa, cw, ce, po, vb, ag, jf, jx, bl, xc, yh, wy, ch, er, nz, nh, lj, vw, kw, ct, tm, mf, bf, iv, hz, im)))
+hasCommonSet(jt, bf, jk, br, sx, jx, rq, im, kw, ia, by, ry, py)
+this is:file:/users/zhaoyu/random/xuyw1664558911
+((-1381541190,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)),(1664558911,Set(ju, qj, kz, vh, tp, ig, tg, is, fm, sw, ia, se, yg, yp, du, pz, sn, dl, qp, fp, pk, xe, mn, bn, eb, rl, gc, gl, mw, kp, nv, uk, mq, nm, mz, nd, cm, zi, pe, tr, lf, jn, ax, dc, iu, il, hg, tc, ar, be, sp, qx, jk, jt, tf, io, gw, rq, hd, yo, cx, fl, cf, xj, mj, py, zt, oe, ku, xd, ff, bv, es, mp, te, by, vx, in, ab, us, ja, jj, nc, bs, ih, ry, ln, hl, kc, ib, ik, sx, zm, el, hi, og, dg, wm, ld, yw, br, yn, ye, qt, xr, ex, cq, mu, jx, ml, ei, ov, yz, wp, lp, aj, kw, la, ru, jr, bf, cb, im, ws, hh, ve)))
+hasCommonSet(yz, wm, se, ku, cb, tf, yp, vh, nc, bs, lp, mw, jt, du, kz, kp, hl, in, xj, ar, is, ei, zt, bf, xd, zm, xe, bn, mj, oe, ib, gw, uk, tp, zi, dc, jk, br, cx, sx, hg, yw, ov, mq, jx, nd, eb, lf, gl, ye, us, el, vx, fm, ju, rq, la, ab, tg, qp, yo, pe, im, xr, sn, ig, mp, fp, jn, iu, nm, qj, ln, ru, tc, dl, pz, kw, ml, qt, pk, kc, ia, ex, fl, tr, cq, yn, ve, by, il, cm, gc, es, ld, rl, ry, wp, ax, og, qx, ih, hi, te, bv, io, sw, jr, be, cf, py, ja, mz, hd, sp, ff, mu, dg, hh, ws, ik, mn, jj, aj, nv, yg)
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(43424) called with curMem=363595, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block rdd_15_0 stored as values in memory (estimated size 42.4 KB, free 529.9 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added rdd_15_0 in memory on localhost:47032 (size: 42.4 KB, free: 530.1 MB)
+15/11/05 22:37:26 INFO Executor: Finished task 0.0 in stage 5.0 (TID 14). 2741 bytes result sent to driver
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 14) in 262 ms on localhost (4/4)
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+15/11/05 22:37:26 INFO DAGScheduler: ResultStage 5 (reduce at EdgeRDDImpl.scala:89) finished in 0.262 s
+15/11/05 22:37:26 INFO DAGScheduler: Job 3 finished: reduce at EdgeRDDImpl.scala:89, took 0.276411 s
+graph edges:25
+15/11/05 22:37:26 INFO SparkContext: Starting job: foreach at q1.scala:93
+15/11/05 22:37:26 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 1 is 155 bytes
+15/11/05 22:37:26 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 164 bytes
+15/11/05 22:37:26 INFO DAGScheduler: Registering RDD 19 (mapPartitions at VertexRDDImpl.scala:247)
+15/11/05 22:37:26 INFO DAGScheduler: Got job 4 (foreach at q1.scala:93) with 4 output partitions
+15/11/05 22:37:26 INFO DAGScheduler: Final stage: ResultStage 9(foreach at q1.scala:93)
+15/11/05 22:37:26 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+15/11/05 22:37:26 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 8)
+15/11/05 22:37:26 INFO DAGScheduler: Submitting ShuffleMapStage 8 (ReplicatedVertexView.upgrade(true, true) - shippedVerts true true (broadcast) MapPartitionsRDD[19] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(3608) called with curMem=407019, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 3.5 KB, free 529.9 MB)
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(2015) called with curMem=410627, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 2015.0 B, free 529.9 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on localhost:47032 (size: 2015.0 B, free: 530.1 MB)
+15/11/05 22:37:26 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:26 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 8 (ReplicatedVertexView.upgrade(true, true) - shippedVerts true true (broadcast) MapPartitionsRDD[19] at mapPartitions at VertexRDDImpl.scala:247)
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Adding task set 8.0 with 2 tasks
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 18, localhost, PROCESS_LOCAL, 2140 bytes)
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 1.0 in stage 8.0 (TID 19, localhost, PROCESS_LOCAL, 2140 bytes)
+15/11/05 22:37:26 INFO Executor: Running task 1.0 in stage 8.0 (TID 19)
+15/11/05 22:37:26 INFO Executor: Running task 0.0 in stage 8.0 (TID 18)
+15/11/05 22:37:26 INFO BlockManager: Found block rdd_12_1 locally
+15/11/05 22:37:26 INFO BlockManager: Found block rdd_12_0 locally
+15/11/05 22:37:26 INFO Executor: Finished task 0.0 in stage 8.0 (TID 18). 2256 bytes result sent to driver
+15/11/05 22:37:26 INFO Executor: Finished task 1.0 in stage 8.0 (TID 19). 2256 bytes result sent to driver
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 18) in 26 ms on localhost (1/2)
+15/11/05 22:37:26 INFO TaskSetManager: Finished task 1.0 in stage 8.0 (TID 19) in 24 ms on localhost (2/2)
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+15/11/05 22:37:26 INFO DAGScheduler: ShuffleMapStage 8 (mapPartitions at VertexRDDImpl.scala:247) finished in 0.028 s
+15/11/05 22:37:26 INFO DAGScheduler: looking for newly runnable stages
+15/11/05 22:37:26 INFO DAGScheduler: running: Set()
+15/11/05 22:37:26 INFO DAGScheduler: waiting: Set(ResultStage 9)
+15/11/05 22:37:26 INFO DAGScheduler: failed: Set()
+15/11/05 22:37:26 INFO DAGScheduler: Missing parents for ResultStage 9: List()
+15/11/05 22:37:26 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[23] at mapPartitions at GraphImpl.scala:51), which is now runnable
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(5368) called with curMem=412642, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 5.2 KB, free 529.9 MB)
+15/11/05 22:37:26 INFO MemoryStore: ensureFreeSpace(2787) called with curMem=418010, maxMem=556038881
+15/11/05 22:37:26 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 2.7 KB, free 529.9 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on localhost:47032 (size: 2.7 KB, free: 530.1 MB)
+15/11/05 22:37:26 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:861
+15/11/05 22:37:26 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 9 (MapPartitionsRDD[23] at mapPartitions at GraphImpl.scala:51)
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Adding task set 9.0 with 4 tasks
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 20, localhost, PROCESS_LOCAL, 2822 bytes)
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 1.0 in stage 9.0 (TID 21, localhost, PROCESS_LOCAL, 3066 bytes)
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 2.0 in stage 9.0 (TID 22, localhost, PROCESS_LOCAL, 3066 bytes)
+15/11/05 22:37:26 INFO TaskSetManager: Starting task 3.0 in stage 9.0 (TID 23, localhost, PROCESS_LOCAL, 2772 bytes)
+15/11/05 22:37:26 INFO Executor: Running task 1.0 in stage 9.0 (TID 21)
+15/11/05 22:37:26 INFO Executor: Running task 0.0 in stage 9.0 (TID 20)
+15/11/05 22:37:26 INFO Executor: Running task 2.0 in stage 9.0 (TID 22)
+15/11/05 22:37:26 INFO Executor: Running task 3.0 in stage 9.0 (TID 23)
+15/11/05 22:37:26 INFO BlockManager: Found block rdd_15_2 locally
+15/11/05 22:37:26 INFO BlockManager: Found block rdd_15_3 locally
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+15/11/05 22:37:26 INFO BlockManager: Found block rdd_15_1 locally
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+15/11/05 22:37:26 INFO BlockManager: Found block rdd_15_0 locally
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+15/11/05 22:37:26 ERROR Executor: Exception in task 3.0 in stage 9.0 (TID 23)
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.apache.spark.graphx.util.collection.GraphXPrimitiveKeyOpenHashMap$mcJI$sp.apply$mcJI$sp(GraphXPrimitiveKeyOpenHashMap.scala:64)
+	at org.apache.spark.graphx.impl.EdgePartition.updateVertices(EdgePartition.scala:91)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:75)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:73)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15/11/05 22:37:26 ERROR Executor: Exception in task 2.0 in stage 9.0 (TID 22)
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.apache.spark.graphx.util.collection.GraphXPrimitiveKeyOpenHashMap$mcJI$sp.apply$mcJI$sp(GraphXPrimitiveKeyOpenHashMap.scala:64)
+	at org.apache.spark.graphx.impl.EdgePartition.updateVertices(EdgePartition.scala:91)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:75)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:73)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15/11/05 22:37:26 ERROR Executor: Exception in task 1.0 in stage 9.0 (TID 21)
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.apache.spark.graphx.util.collection.GraphXPrimitiveKeyOpenHashMap$mcJI$sp.apply$mcJI$sp(GraphXPrimitiveKeyOpenHashMap.scala:64)
+	at org.apache.spark.graphx.impl.EdgePartition.updateVertices(EdgePartition.scala:91)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:75)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:73)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15/11/05 22:37:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+15/11/05 22:37:26 ERROR Executor: Exception in task 0.0 in stage 9.0 (TID 20)
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.apache.spark.graphx.util.collection.GraphXPrimitiveKeyOpenHashMap$mcJI$sp.apply$mcJI$sp(GraphXPrimitiveKeyOpenHashMap.scala:64)
+	at org.apache.spark.graphx.impl.EdgePartition.updateVertices(EdgePartition.scala:91)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:75)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:73)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15/11/05 22:37:26 WARN TaskSetManager: Lost task 3.0 in stage 9.0 (TID 23, localhost): java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.apache.spark.graphx.util.collection.GraphXPrimitiveKeyOpenHashMap$mcJI$sp.apply$mcJI$sp(GraphXPrimitiveKeyOpenHashMap.scala:64)
+	at org.apache.spark.graphx.impl.EdgePartition.updateVertices(EdgePartition.scala:91)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:75)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:73)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+15/11/05 22:37:26 ERROR TaskSetManager: Task 3 in stage 9.0 failed 1 times; aborting job
+15/11/05 22:37:26 INFO TaskSetManager: Lost task 2.0 in stage 9.0 (TID 22) on executor localhost: java.lang.ArrayIndexOutOfBoundsException (-1) [duplicate 1]
+15/11/05 22:37:26 INFO TaskSetManager: Lost task 0.0 in stage 9.0 (TID 20) on executor localhost: java.lang.ArrayIndexOutOfBoundsException (-1) [duplicate 2]
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+15/11/05 22:37:26 INFO TaskSetManager: Lost task 1.0 in stage 9.0 (TID 21) on executor localhost: java.lang.ArrayIndexOutOfBoundsException (-1) [duplicate 3]
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+15/11/05 22:37:26 INFO TaskSchedulerImpl: Cancelling stage 9
+15/11/05 22:37:26 INFO DAGScheduler: ResultStage 9 (foreach at q1.scala:93) failed in 0.064 s
+15/11/05 22:37:26 INFO DAGScheduler: Job 4 failed: foreach at q1.scala:93, took 0.160064 s
+Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 3 in stage 9.0 failed 1 times, most recent failure: Lost task 3.0 in stage 9.0 (TID 23, localhost): java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.apache.spark.graphx.util.collection.GraphXPrimitiveKeyOpenHashMap$mcJI$sp.apply$mcJI$sp(GraphXPrimitiveKeyOpenHashMap.scala:64)
+	at org.apache.spark.graphx.impl.EdgePartition.updateVertices(EdgePartition.scala:91)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:75)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:73)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1283)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1271)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1270)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1270)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:697)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:697)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:697)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1496)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1458)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1447)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:567)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1822)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1835)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1919)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1.apply(RDD.scala:888)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:147)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:108)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:306)
+	at org.apache.spark.rdd.RDD.foreach(RDD.scala:888)
+	at Question1$.main(q1.scala:93)
+	at Question1.main(q1.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:672)
+	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:180)
+	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:205)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:120)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at org.apache.spark.graphx.util.collection.GraphXPrimitiveKeyOpenHashMap$mcJI$sp.apply$mcJI$sp(GraphXPrimitiveKeyOpenHashMap.scala:64)
+	at org.apache.spark.graphx.impl.EdgePartition.updateVertices(EdgePartition.scala:91)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:75)
+	at org.apache.spark.graphx.impl.ReplicatedVertexView$$anonfun$2$$anonfun$apply$1.apply(ReplicatedVertexView.scala:73)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$$anon$13.hasNext(Iterator.scala:371)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$28.apply(RDD.scala:890)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1848)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15/11/05 22:37:26 INFO SparkContext: Invoking stop() from shutdown hook
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned accumulator 4
+15/11/05 22:37:26 INFO BlockManagerInfo: Removed broadcast_8_piece0 on localhost:47032 in memory (size: 2.7 KB, free: 530.1 MB)
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned accumulator 8
+15/11/05 22:37:26 INFO BlockManagerInfo: Removed broadcast_7_piece0 on localhost:47032 in memory (size: 2015.0 B, free: 530.1 MB)
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned accumulator 7
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned shuffle 2
+15/11/05 22:37:26 INFO BlockManagerInfo: Removed broadcast_6_piece0 on localhost:47032 in memory (size: 2.2 KB, free: 530.1 MB)
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned accumulator 6
+15/11/05 22:37:26 INFO BlockManagerInfo: Removed broadcast_5_piece0 on localhost:47032 in memory (size: 2.1 KB, free: 530.1 MB)
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned accumulator 5
+15/11/05 22:37:26 INFO BlockManagerInfo: Removed broadcast_4_piece0 on localhost:47032 in memory (size: 1732.0 B, free: 530.1 MB)
+15/11/05 22:37:26 INFO BlockManagerInfo: Removed broadcast_3_piece0 on localhost:47032 in memory (size: 2.2 KB, free: 530.1 MB)
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned accumulator 3
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned shuffle 1
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned shuffle 0
+15/11/05 22:37:26 INFO BlockManager: Removing RDD 15
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned RDD 15
+15/11/05 22:37:26 INFO BlockManager: Removing RDD 12
+15/11/05 22:37:26 INFO ContextCleaner: Cleaned RDD 12
+15/11/05 22:37:26 INFO BlockManagerInfo: Removed broadcast_0_piece0 on localhost:47032 in memory (size: 19.4 KB, free: 530.3 MB)
+15/11/05 22:37:26 INFO SparkUI: Stopped Spark web UI at http://172.20.1.12:4042
+15/11/05 22:37:26 INFO DAGScheduler: Stopping DAGScheduler
+15/11/05 22:37:26 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+15/11/05 22:37:26 INFO MemoryStore: MemoryStore cleared
+15/11/05 22:37:26 INFO BlockManager: BlockManager stopped
+15/11/05 22:37:26 INFO BlockManagerMaster: BlockManagerMaster stopped
+15/11/05 22:37:26 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+15/11/05 22:37:26 INFO SparkContext: Successfully stopped SparkContext
+15/11/05 22:37:26 INFO ShutdownHookManager: Shutdown hook called
+15/11/05 22:37:26 INFO ShutdownHookManager: Deleting directory /tmp/spark-db54e876-5f02-47ac-9a3e-bb340fcf801e

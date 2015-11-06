@@ -29,16 +29,19 @@ def write_random_folder(folderpath, num=200):
         print e
 
     for i in range(num):
-        filepath = os.path.join(folderpath, get_random_string(4))
+        #filepath = os.path.join(folderpath, get_random_string(4))
+        filepath = os.path.join(folderpath, str(random.randint(0, 100)))
         write_random_data(filepath)
 
 
 def main():
     parser = argparse.ArgumentParser(description="generate words files")
     parser.add_argument("-d", "--dir", help="output dir", default="random_words")
+    parser.add_argument("-n", "--num", help="number of generated files", default=20, type=int)
     args = parser.parse_args()
+    print args
 
-    write_random_folder(args.dir)
+    write_random_folder(args.dir, args.num)
 
 if __name__ == '__main__':
     main()

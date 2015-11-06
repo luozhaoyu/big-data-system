@@ -113,13 +113,9 @@ public class TwitterSampleSpout extends BaseRichSpout {
 		twitterStream.setOAuthAccessToken(token);
 		
 		if (keyWords.length == 0) {
-
 			twitterStream.sample();
-		}
-
-		else {
+		}else {
 			FilterQuery query = new FilterQuery();
-			//query.count(500000);
 			query.track(keyWords);
 			query.language(new String[]{"en"});
 			twitterStream.filter(query);

@@ -18,14 +18,16 @@
 
 package storm.starter;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import storm.starter.bolt.SmartPrinterBolt;
-import storm.starter.spout.TwitterSampleSpout;
+import storm.starter.bolt.Q2FilterTweetBolt;
+import storm.starter.bolt.Q2PrintTweetBolt;
+import storm.starter.spout.Q2FetchTweetSpout;
+import storm.starter.spout.Q2RandomFriendsCountSpout;
+import storm.starter.spout.Q2RandomHashtagSpout;
 import backtype.storm.Config;
 import backtype.storm.LocalCluster;
+import backtype.storm.generated.StormTopology;
 import backtype.storm.topology.TopologyBuilder;
+import backtype.storm.utils.Utils;
 
 public class Q2Stream {        
     public static void main(String[] args) {
@@ -33,29 +35,29 @@ public class Q2Stream {
         String consumerSecret = "zmwC0g6z1FOBBQigW8w2lrnLYncuH4p3QX25RUCNa8aU1QSCC5"; 
         String accessToken = "2809571326-fyBz1ITFXf4yjuqZvHKgGyy0QcQfNVr8y2OGYq6"; 
         String accessTokenSecret = "MAnEtUccHXheXf0z2pauV75oj2XOm6ag4hiLvbUOh6n6B";
-        String[] keyWords = new String[]{"cat", "car", "Stockholm", "snow", "data", "system", "Trump", "Palantir", "blue", "badger",
-        		"NFL", "apple", "google", "facebook", "perks", "spg", "cajun", "banana", "taco", "whatever", "weareone", "packers", "green",
-        		"NBA", "mlb", "dog", "kitten", "blueberry", "romance", "princess", "phone", "nuts", "sheldon", "mad", "talk", "nasty",
-        		"procrastination", "cook", "college", "patriots", "dumnass", "dough", "winter", "game", "thrones", "halloween", "warcraft",
-        		"hiking", "intern", "park", "sweater", "epic", "dota", "year", "wrath", "waste", "Blake", "street", "toyota", "arrow", 
-        		"warning", "travel", "flight", "reject", "karaoke", "bless", "empire", "survivor", "bank", "dating", "restaurant", "tinder",
-        		"shopping", "win"};
+        int interval = 100;
         
         TopologyBuilder builder = new TopologyBuilder();
-        Date date = new Date();
         
-        builder.setSpout("twitter", new TwitterSampleSpout(consumerKey, consumerSecret, accessToken, accessTokenSecret, keyWords));
-        builder.setBolt("print", new SmartPrinterBolt(  "/u/y/i/yiran/install/tweets/nokeyword-" + new SimpleDateFormat("MMddHHmmss").format(date) + ".txt"))
-                .shuffleGrouping("twitter");
+        builder.setSpout("friendsCount", new Q2RandomFriendsCountSpout(interval));
+        builder.setSpout("hashtags", new Q2RandomHashtagSpout(interval));
+        builder.setSpout("tweets",  new Q2FetchTweetSpout(consumerKey, consumerSecret, accessToken, accessTokenSecret, interval));
+        builder.setBolt("filter", new Q2FilterTweetBolt())
+        	.shuffleGrouping("friendsCount")
+        	.shuffleGrouping("hashtags")
+        	.shuffleGrouping("tweets");
+        builder.setBolt("printer", new Q2PrintTweetBolt())
+        	.shuffleGrouping("filter", "filterStream");
                 
                 
         Config conf = new Config();
         conf.setDebug(true);
         
         final LocalCluster cluster = new LocalCluster();
+        StormTopology topo = builder.createTopology();
+        cluster.submitTopology("test", conf, topo);
         
-        cluster.submitTopology("test", conf, builder.createTopology());
-        
+        //Utils.sleep(interval * 100);
 		Runtime.getRuntime().addShutdownHook(new Thread() {
 			@Override
 			public void run() {

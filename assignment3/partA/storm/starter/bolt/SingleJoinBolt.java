@@ -74,6 +74,10 @@ public class SingleJoinBolt extends BaseRichBolt {
 
   @Override
   public void execute(Tuple tuple) {
+	if (tuple.size() <= 0) {
+		System.out.println("DEBUG\tSingleJoinBolt\tGetEmptyTuple\t" + tuple.toString());
+	}
+	  
     List<Object> id = tuple.select(_idFields);
     GlobalStreamId streamId = new GlobalStreamId(tuple.getSourceComponent(), tuple.getSourceStreamId());
     if (!_pending.containsKey(id)) {

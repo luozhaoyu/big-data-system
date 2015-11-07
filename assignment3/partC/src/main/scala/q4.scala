@@ -24,7 +24,7 @@ object Question4 {
   def parseFile(nameContent: (String, String)): (VertexId, Set[String]) = {
     //val id = java.util.UUID.randomUUID().getMostSignificantBits()
     val id = nameContent._1.split('/').last.toInt
-    println("this is:" + nameContent._1 + id)
+    println(s"read file $id :" + nameContent._1)
     (id, parseContent(nameContent._2))
   }
   
@@ -91,7 +91,7 @@ object Question4 {
 	}
       }
       val mostPopularWord = wordCount.max()
-      println(mostPopularWord.toString())
+      println("mostPopularWord: " + mostPopularWord.toString())
     }
   }
 }

@@ -35,7 +35,7 @@ object Question1 {
   def parseFile(nameContent: (String, String)): (VertexId, Set[String]) = {
     //val id = java.util.UUID.randomUUID().getMostSignificantBits()
     val id = nameContent._1.split('/').last.toInt
-    println("this is:" + nameContent._1 + id)
+    println(s"read file $id : " + nameContent._1)
     (id, parseContent(nameContent._2))
    // var m = new MyVertex(nameContent._1, parseContent(nameContent._2))
    // m
@@ -77,7 +77,6 @@ object Question1 {
       println("please input tweets folder" + args.mkString(" "))
       println(args(0))
     } else {
-
 	val sparkConf = new SparkConf().setAppName("Q1LargerEdgeNumber")
 	val sc = new SparkContext(sparkConf)
 
@@ -88,22 +87,13 @@ object Question1 {
 	val default: (VertexId, Set[String]) = (111, Set("Iamempty"))
 	val graph: Graph[Set[String], Set[String]] = Graph[Set[String], Set[String]](myVertex, myEdges)
 
-	//val num = myEdges.filter(beLarger).count()
-
 	println("myVertexCount: " + myVertex.count())
 	println("myEdgesCount: " + myEdges.count())
         println("graph verticesCount:" + graph.vertices.count())
         println("graph edgesCount:" + graph.edges.count())
-	myVertex.foreach(x => println("myVertex:" + x.toString()))
-	myEdges.foreach(x => println("myEdges:" + x.toString()))
-	graph.vertices.foreach(x => println("vertex:" + x.toString()))
-	graph.edges.foreach(x => println("edges" + x.toString()))
 	println("tripletCount" + graph.triplets.count())
-	graph.triplets.foreach(x => println("list"))
-	//graph.triplets.foreach(x => println("list" + x.toString()))
         val num = graph.triplets.filter(beLarger).count()
-	println("larger:" + num)
-      
+	println("largerEdgeNumer:" + num)
     }
   }
 }
